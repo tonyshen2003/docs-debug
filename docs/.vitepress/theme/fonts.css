@@ -1,16 +1,5 @@
 @charset "UTF-8"; /* .vitepress/theme/my-fonts.css */
 
-:root {
-  --vp-font-family-base: Inter, "Noto Sans SC", sans-serif;
-  --vp-font-family-logo: "DFPHanziPen-GBW5", sans-serif;
-  --vp-font-family-mono: "Maple Mono", monospace, "Noto Sans SC", sans-serif;
-}
-
-.VPHomeHero .main .heading span.text {
-  font-family: var(--vp-font-family-logo);
-  margin-top: 0.25em;
-}
-
 @font-face {
   font-family: "DFPHanziPen-GBW5";
   font-style: normal;

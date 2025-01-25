@@ -3,7 +3,8 @@ import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme-without-fonts'
 import './style.css'
 
-import './my-fonts.css'
+import './fonts.css'
+import './customize.css'
 
 /** @type {import('vitepress').Theme} */
 export default {

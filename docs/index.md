@@ -1,28 +1,33 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
+title: Home
 
 hero:
   name: "树莓技术库"
-  text: "融合数字与媒体的力量！"
-  tagline: My great project tagline
+  text: "流动的影像传承历史\n不变的温度记录人文"
+  tagline: ""
   image:
     src: /树莓酱_透明.png
     alt: 树莓酱
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 快速开始
+      link: /guide/markdown-examples
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 获得商业支持
+      link: mailto:contact@szzxshumei.com
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
----
+  - title: 工作流
+    icon: "🛠️" # 工具和解决方案的象征
+    details: 从灵感到落地的一站式解决方案。
 
+  - title: 树莓转播®
+    icon: "📡" # 实时转播和信号传输的象征
+    details: 实时流媒体转播，传播校园生活与文化的精彩瞬间。
+
+  - title: 多机位录制
+    icon: "🎥" # 摄影和多机位录制的象征
+    details: 多机位协作录制，捕捉创意每个角度的精彩瞬间。
+---

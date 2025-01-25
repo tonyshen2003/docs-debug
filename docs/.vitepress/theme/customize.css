@@ -1,0 +1,30 @@
+:root {
+  --vp-font-family-base: Inter, "Noto Sans SC", sans-serif;
+  --vp-font-family-logo: "DFPHanziPen-GBW5", sans-serif;
+  --vp-font-family-mono: "Maple Mono", monospace, "Noto Sans SC", sans-serif;
+
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    120deg,
+    #d795c0 45%,
+    #7189d2
+  );
+  --vp-home-hero-image-background-image: -webkit-linear-gradient(
+    -45deg,
+    #d795c0 50%,
+    #7189d2
+  );
+}
+
+.VPHomeHero .main .heading span.text {
+  font-family: var(--vp-font-family-logo);
+  margin-top: 0.25em;
+  line-height: 1.5;
+}
+
+.VPHomeHero .main .heading span.name {
+  letter-spacing: 0;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.17), 
+  0 0 16px rgba(255, 255, 255, 0.12), 
+  0 0 24px rgba(255, 255, 255, 0.08);
+}
+
