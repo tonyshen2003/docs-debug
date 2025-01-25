@@ -8,7 +8,7 @@ hero:
   text: "流动的影像传承历史\n不变的温度记录人文"
   tagline: ""
   image:
-    src: /树莓酱_透明.png
+    src: /树莓酱_透明.webp
     alt: 树莓酱
   actions:
     - theme: brand
