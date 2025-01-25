@@ -4,8 +4,11 @@ layout: home
 
 hero:
   name: "树莓技术库"
-  text: "A VitePress Site"
+  text: "“融合数字与媒体的力量！”"
   tagline: My great project tagline
+  image:
+    src: /树莓酱_透明.png
+    alt: 树莓酱
   actions:
     - theme: brand
       text: Markdown Examples
