@@ -31,18 +31,34 @@ export default defineConfig({
     sidebar: [
       // 文档库侧边栏
       {
-        text: "Guide",
+        text: "多机位制作 / EFP",
+        collapsed: false,
         items: [
-          { text: "Markdown Examples", link: "/guide/markdown-examples" },
-          { text: "Runtime API Examples", link: "/guide/api-examples" },
-        ],
-      },
+          { text: "活动策划", link: "/guide/EFP/event-planning/" },
+          { text: "制作需求", link: "/guide/EFP/production-requirements/" },
+          { text: "设备清单", link: "/guide/EFP/equipment-list/" },
+          { text: "机位设计", link: "/guide/EFP/camera-layout/" },
+          { text: "导播切换", link: "/guide/EFP/live-switching/" },
+          { text: "收声方案", link: "/guide/EFP/audio-capture-plan/" },
+          { text: "后期制作", link: "/guide/EFP/post-production/" }
+        ]
+      },      
+
       {
         text: "About",
         items: [
           { text: "Our Team", link: "/about/team" },
         ],
       },
+
+      {
+        text: "Template",
+        items: [
+          { text: "Markdown Examples", link: "/guide/markdown-examples" },
+          { text: "Runtime API Examples", link: "/guide/api-examples" },
+        ],
+      },
+
     ],
 
     socialLinks: [
