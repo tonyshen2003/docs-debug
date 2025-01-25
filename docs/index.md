@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "树莓技术库"
-  text: "“融合数字与媒体的力量！”"
+  text: "融合数字与媒体的力量！"
   tagline: My great project tagline
   image:
     src: /树莓酱_透明.png

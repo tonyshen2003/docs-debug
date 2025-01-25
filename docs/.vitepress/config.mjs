@@ -10,7 +10,9 @@ export default defineConfig({
   lang: "zh-CN",
   cleanUrls: true, // 从 URL 中删除 .html 后缀
   lastUpdated: true, // 时间戳
+  appearance: "dark",
   sitemap: { hostname: "https://docs.szzxshumei.com/" },
+
   head: [
     ["link", { rel: "icon", href: "/shumei-logo.webp" }],
     ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
@@ -72,4 +74,25 @@ export default defineConfig({
       },
     ],
   },
+
+  /*
+  transformHead({ assets }) {
+    // 相应地调整正则表达式以匹配字体
+    const myFontFile = assets.find(file => /font-name\.\w+\.woff2/)
+    if (myFontFile) {
+      return [
+        [
+          'link',
+          {
+            rel: 'preload',
+            href: myFontFile,
+            as: 'font',
+            type: 'font/woff2',
+            crossorigin: ''
+          }
+        ]
+      ]
+    }
+  },
+  */
 });

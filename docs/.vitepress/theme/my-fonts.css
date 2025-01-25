@@ -1,5 +1,148 @@
-/* .vitepress/theme/my-fonts.css */
+@charset "UTF-8"; /* .vitepress/theme/my-fonts.css */
+
 :root {
-    --vp-font-family-base: Inter, "Noto Sans SC", sans-serif;
-    --vp-font-family-mono: /* code font */
-  }
+  --vp-font-family-base: Inter, "Noto Sans SC", sans-serif;
+  --vp-font-family-logo: "DFPHanziPen-GBW5", sans-serif;
+  --vp-font-family-mono: "Maple Mono", monospace, "Noto Sans SC", sans-serif;
+}
+
+.VPHomeHero .main .heading span.text {
+  font-family: var(--vp-font-family-logo);
+  margin-top: 0.25em;
+}
+
+@font-face {
+  font-family: "DFPHanziPen-GBW5";
+  font-style: normal;
+  src: url("/fonts/DFPHanziPen-GBW5/hua-kang-pian-pian-ti-w5.woff2")
+    format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maple Mono";
+  font-style: normal;
+  font-weight: 100;
+  src: url("/fonts/MapleMono/MapleMono-Thin.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maple Mono";
+  font-style: italic;
+  font-weight: 100;
+  src: url("/fonts/MapleMono/MapleMono-ThinItalic.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maple Mono";
+  font-style: normal;
+  font-weight: 200;
+  src: url("/fonts/MapleMono/MapleMono-ExtraLight.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maple Mono";
+  font-style: italic;
+  font-weight: 200;
+  src: url("/fonts/MapleMono/MapleMono-ExtraLightItalic.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maple Mono";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/MapleMono/MapleMono-Light.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maple Mono";
+  font-style: italic;
+  font-weight: 300;
+  src: url("/fonts/MapleMono/MapleMono-LightItalic.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maple Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/MapleMono/MapleMono-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maple Mono";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/MapleMono/MapleMono-Italic.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maple Mono";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/MapleMono/MapleMono-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maple Mono";
+  font-style: italic;
+  font-weight: 500;
+  src: url("/fonts/MapleMono/MapleMono-MediumItalic.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maple Mono";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/MapleMono/MapleMono-SemiBold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maple Mono";
+  font-style: italic;
+  font-weight: 600;
+  src: url("/fonts/MapleMono/MapleMono-SemiBoldItalic.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maple Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/MapleMono/MapleMono-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maple Mono";
+  font-style: italic;
+  font-weight: 700;
+  src: url("/fonts/MapleMono/MapleMono-BoldItalic.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maple Mono";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/MapleMono/MapleMono-ExtraBold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maple Mono";
+  font-style: italic;
+  font-weight: 800;
+  src: url("/fonts/MapleMono/MapleMono-ExtraBoldItalic.woff2") format("woff2");
+  font-display: swap;
+}
