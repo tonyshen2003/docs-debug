@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 
 export default defineConfig({
-  title: "树莓技术 / Shumei Tech",
+  title: "树莓技术库",
   description: "A VitePress Site",
   base: '/',
   lang: 'zh-CN',

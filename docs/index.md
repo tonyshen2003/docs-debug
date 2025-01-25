@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "树莓技术 / Shumei Tech"
+  name: "树莓技术库"
   text: "A VitePress Site"
   tagline: My great project tagline
   actions:
