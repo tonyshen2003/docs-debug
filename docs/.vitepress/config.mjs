@@ -41,7 +41,8 @@ export default defineConfig({
           { text: "机位设计", link: "/guide/EFP/camera-layout/" },
           { text: "导播切换", link: "/guide/EFP/live-switching/" },
           { text: "收声方案", link: "/guide/EFP/audio-capture-plan/" },
-          { text: "后期制作", link: "/guide/EFP/post-production/" }
+          { text: "后期制作", link: "/guide/EFP/post-production/" },
+          { text: "活动案例", link: "/guide/EFP/EFP-examples/" }
         ]
       },      
 
