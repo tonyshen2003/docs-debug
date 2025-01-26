@@ -11,7 +11,7 @@ import {
 
 const members = [
   {
-    avatar: 'https://szzxshumei.com/wp-content/uploads/2025/01/00000fce-6ad5-738e-476c-eda5ce46672d.webp',
+    avatar: 'https://avatars.githubusercontent.com/u/54088075',
     name: 'CircleCrop',
     title: '技术专家',
     description: '专注于前端技术开发和数字媒体工作流优化',
