@@ -24,7 +24,7 @@ const members = [
     ]
   },
   {
-    avatar: 'https://avatars.githubusercontent.com/u/132267698',
+    avatar: 'https://szzxshumei.com/wp-content/uploads/2025/01/00000fce-6bf4-77a3-484a-6e6b4bed5afe.png',
     name: 'TonyShen',
     title: '编辑',
     description: '热爱文字创作与内容策划，致力于传播校园文化与技术知识。',
