@@ -1,18 +1,18 @@
-{
-    "workbench.editor.languageDetection": false,
-    "editor.wordBreak": "keepAll",
-    "http.proxy": "http://127.0.0.1:33210",
-    "http.proxyStrictSSL": false, // 如果代理服务器使用的是自签名证书，可将此值设为 false
-    "http.proxyAuthorization": null,
-    "http.electronFetch": true,
-    "http.experimental.systemCertificatesV2": true,
-    "workbench.iconTheme": "emoji-file-icons",
-    "workbench.productIconTheme": "emoji-product-icons-fun",
-    "workbench.colorTheme": "GitHub Dark Default",
-    "git.autofetch": true,
-    "redhat.telemetry.enabled": true,
-    "git.confirmSync": false // 如果代理需要身份验证，可以设置为 "Basic <Base64 编码的用户名：密码>"
-}*Input**
+# Markdown Extension Examples
+
+This page demonstrates some of the built-in markdown extensions provided by VitePress.
+
+## Markdown 语言
+
+[Markdown-Wikipedia](https://zh.m.wikipedia.org/zh-cn/Markdown)<br>
+[Markdown 基本语法](https://markdown.com.cn/basic-syntax/)
+
+
+## Syntax Highlighting
+
+VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shikijs/shiki), with additional features like line-highlighting:
+
+**Input**
 
 ````md
 ```js{4}
