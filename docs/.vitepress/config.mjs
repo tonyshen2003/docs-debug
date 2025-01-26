@@ -42,7 +42,8 @@ export default defineConfig({
           { text: "导播切换", link: "/guide/EFP/live-switching/" },
           { text: "收声方案", link: "/guide/EFP/audio-capture-plan/" },
           { text: "后期制作", link: "/guide/EFP/post-production/" },
-          { text: "活动案例", link: "/guide/EFP/EFP-examples/" }
+          { text: "活动案例", link: "/guide/EFP/EFP-examples/" },
+          { text: "参考资料", link: "/guide/EFP/reference-materials/" }
         ]
       },      
 
