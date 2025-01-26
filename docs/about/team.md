@@ -11,10 +11,10 @@ import {
 
 const members = [
   {
-    avatar: 'https://avatars.githubusercontent.com/u/54088075',
+    avatar: 'https://szzxshumei.com/wp-content/uploads/2025/01/00000fce-6ad5-738e-476c-eda5ce46672d.webp',
     name: 'CircleCrop',
     title: '技术专家',
-    description: '专注于前端技术开发和数字媒体工作流优化。',
+    description: '专注于前端技术开发和数字媒体工作流优化',
     links: [
       { icon: 'github', link: 'https://github.com/CircleCrop' },
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/circlecrop' },
