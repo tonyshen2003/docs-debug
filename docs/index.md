@@ -13,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /guide/markdown-examples
+      link: /guide/EFP/camera-layout
     - theme: alt
       text: 获得商业支持
       link: mailto:contact@szzxshumei.com
