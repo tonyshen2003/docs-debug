@@ -14,7 +14,8 @@ title: 摄影摄像
 
 ## 原则
 
-## 设备与工具
+## 焦距选择
+[佳能焦距计算器](https://m.canon.com.cn/special/calculator/index.html)
 
 ## 拍摄技巧
 
