@@ -4,6 +4,13 @@ title: 参考资料
 ---
 # 参考资料
 
-```python
- <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=979894970&bvid=BV1f44y1P7T6&cid=555944123&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe> 
-```
+
+[采访教程 2.0：多机位拍摄上手，10 分钟掌握高端采访技巧！](https://www.bilibili.com/video/BV1f44y1P7T6/?share_source=copy_web&vd_source=df8bc1c1d9b905f70c544175ee640ec2)
+<br>
+`流程分享`
+`Gopro`
+`时间码`
+`同步`
+`多机位采访`
+`远程监看`
+
