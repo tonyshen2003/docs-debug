@@ -16,7 +16,8 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     footer: {
-      copyright: 'Copyright ©  2018-2025 苏州中学树莓社 Digital Media Association of SHS. All Rights Reserved.'
+      copyright:
+        "Copyright ©  2018-2025 苏州中学树莓社 Digital Media Association of SHS. All Rights Reserved.",
     },
 
     nav: [
@@ -34,24 +35,40 @@ export default defineConfig({
         text: "多机位制作 / EFP",
         collapsed: false,
         items: [
-          { text: "活动策划", link: "/guide/EFP/event-planning/" },
-          { text: "制作需求", link: "/guide/EFP/production-requirements/" },
-          { text: "设备清单", link: "/guide/EFP/equipment-list/" },
-          { text: "摄影摄像", link: "/guide/EFP/Photography/" },
-          { text: "机位设计", link: "/guide/EFP/camera-layout/" },
-          { text: "导播切换", link: "/guide/EFP/live-switching/" },
-          { text: "收声方案", link: "/guide/EFP/audio-capture-plan/" },
-          { text: "后期制作", link: "/guide/EFP/post-production/" },
-          { text: "活动案例", link: "/guide/EFP/EFP-examples/" },
-          { text: "参考资料", link: "/guide/EFP/reference-materials/" }
-        ]
-      },      
+          {
+            text: "前期准备",
+            collapsed: true,
+            items: [
+              { text: "活动策划", link: "/guide/EFP/event-planning/" },
+              { text: "制作需求", link: "/guide/EFP/production-requirements/" },
+              { text: "设备清单", link: "/guide/EFP/equipment-list/" },
+            ],
+          },
+          {
+            text: "现场制作",
+            collapsed: true,
+            items: [
+              { text: "摄影摄像", link: "/guide/EFP/Photography/" },
+              { text: "机位设计", link: "/guide/EFP/camera-layout/" },
+              { text: "导播切换", link: "/guide/EFP/live-switching/" },
+              { text: "收声方案", link: "/guide/EFP/audio-capture-plan/" },
+            ],
+          },
+          {
+            text: "后期参考",
+            collapsed: true,
+            items: [
+              { text: "后期制作", link: "/guide/EFP/post-production/" },
+              { text: "活动案例", link: "/guide/EFP/EFP-examples/" },
+              { text: "参考资料", link: "/guide/EFP/reference-materials/" },
+            ],
+          },
+        ],
+      },
 
       {
         text: "About",
-        items: [
-          { text: "Our Team", link: "/about/team" },
-        ],
+        items: [{ text: "Our Team", link: "/about/team" }],
       },
 
       {
@@ -61,7 +78,6 @@ export default defineConfig({
           { text: "Runtime API Examples", link: "/guide/api-examples" },
         ],
       },
-
     ],
 
     socialLinks: [
@@ -81,10 +97,9 @@ export default defineConfig({
         icon: "github",
         link: "https://github.com/Digital-Media-Association-of-SHS",
       },
-      
     ],
     search: {
-      provider: 'local'
+      provider: "local",
     },
   },
 
@@ -128,5 +143,4 @@ export default defineConfig({
       { rel: "stylesheet", href: "https://use.typekit.net/ytd1lqa.css" },
     ],
   ],
-
 });
