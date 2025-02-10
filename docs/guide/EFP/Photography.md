@@ -1,4 +1,8 @@
 ---
+head:
+  - - link
+    - rel: stylesheet
+      href: https://cdn.jsdelivr.net/npm/katex@0.6.0/dist/katex.min.css
 title: 摄影摄像
 
 ---
@@ -30,17 +34,17 @@ title: 摄影摄像
 推荐使用手机提前测量焦距的效果。
 
 ### 1. 物理成像公式
-```math
-\frac{1}{f} = \frac{1}{u} + \frac{1}{v}
-```
+
+$$\frac{1}{f} = \frac{1}{u} + \frac{1}{v}$$
+
 - `f`：镜头焦距（mm）
 - `u`：物距（被摄体到镜头距离）
 - `v`：像距（镜头到传感器距离）
 
 ### 2. 视角计算公式
-```math
-\alpha = 2 \arctan\left(\frac{w}{2f}\right) 
-```
+
+$$\alpha = 2 \arctan\left(\frac{w}{2f}\right)$$
+
 - `w`：传感器宽度（全画幅=36mm）
 - 示例：50mm 镜头在全画幅的视角≈46°
 
@@ -52,9 +56,9 @@ title: 摄影摄像
 | 135mm  | 压缩空间关系              | 突出主体孤立感        |
 
 ### 4. 景深控制方程
-```math
-DoF \approx \frac{2u^2 N c}{f^2}
-```
+
+$$DoF \approx \frac{2u^2 N c}{f^2}$$
+
 - `N`：光圈值
 - `c`：弥散圆直径（通常取 0.035mm）
 - **关键结论**：焦距加倍，景深减为 1/4
@@ -68,11 +72,15 @@ DoF \approx \frac{2u^2 N c}{f^2}
 
 
 ### 6. 焦距 - 运动模糊关系
-```
-允许运动速度 = (传感器宽度 × 安全快门) / (焦距 × 运动方向系数)
-```
+
+$$\text{Speed} = \frac{\text{Sensor Width} \times \text{Shutter Speed}}{\text{Focal Length} \times \text{Direction Factor}}$$
+
+
+
 - 横向运动系数取 0.5，纵向取 0.3
-- **示例**：50mm 镜头拍摄横向运动，允许速度= (36mm×1/50s)/(50×0.5)=0.0288m/s
+- **示例**：50mm 镜头拍摄横向运动，允许速度：
+
+$$\frac{36 \, \text{mm} \times \frac{1}{50} \, \text{s}}{50 \times 0.5} = 0.0288 \, \text{m/s}$$
 
 ### 7、特殊光学现象
 #### 1. 热折射效应

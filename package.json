@@ -8,5 +8,8 @@
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "clean": "yarn cache clean"
+  },
+  "dependencies": {
+    "markdown-it-katex": "^2.0.3"
   }
 }
