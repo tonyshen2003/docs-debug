@@ -171,7 +171,7 @@ export default defineConfig({
     ssr: { 
       noExternal: [ 
         // If there are other packages that need to be processed by Vite, you can add them here. //
-        '@nolebase/vitepress-plugin-inline-link-preview', 
+        '@nolebase/*'
       ], 
     }, 
   },
