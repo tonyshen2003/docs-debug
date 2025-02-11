@@ -1,5 +1,6 @@
 import { defineConfig } from "vitepress";
 import markdownItKatex from 'markdown-it-katex'
+import { InlineLinkPreviewElementTransform } from '@nolebase/vitepress-plugin-inline-link-preview/markdown-it'
 
 // https://vitepress.dev/reference/site-config
 
@@ -72,13 +73,13 @@ export default defineConfig({
         items: [{ text: "Our Team", link: "/about/team" }],
       },
 
-      {
+      /*{
         text: "Template",
         items: [
           { text: "Markdown Examples", link: "/guide/markdown-examples" },
           { text: "Runtime API Examples", link: "/guide/api-examples" },
         ],
-      },
+      },*/
     ],
 
     socialLinks: [
@@ -136,7 +137,7 @@ export default defineConfig({
       "link",
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+SC:wght@100..900&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+SC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap",
       },
     ],
     [
@@ -144,18 +145,36 @@ export default defineConfig({
       { rel: "stylesheet", href: "https://use.typekit.net/ytd1lqa.css" },
     ],
   ],
+
   markdown: {
     config: (md) => {
-      md.use(markdownItKatex)
+      md.use(markdownItKatex),
+      md.use(InlineLinkPreviewElementTransform) 
     }
   },
+
   vue: {
     template: {
       compilerOptions: {
         isCustomElement: (tag) => customElements.includes(tag)
       }
     }
-  }
+  },
+  
+  vite: { 
+    optimizeDeps: { 
+      exclude: [ 
+        '@nolebase/vitepress-plugin-inline-link-preview/client',
+        'vitepress'
+      ], 
+    }, 
+    ssr: { 
+      noExternal: [ 
+        // If there are other packages that need to be processed by Vite, you can add them here. //
+        '@nolebase/vitepress-plugin-inline-link-preview', 
+      ], 
+    }, 
+  },
 });
 
 const customElements = [

@@ -1,6 +1,9 @@
 ---
 title: 参考资料
-
+prev:
+  text: '活动案例'
+  link: '/guide/EFP/EFP-examples'
+next: false
 ---
 # 多机位制作参考资料
 

@@ -1,6 +1,11 @@
 ---
 title: 收声方案
-
+prev:
+  text: '导播切换'
+  link: '/guide/EFP/live-switching'
+next:
+  text: '后期制作'
+  link: '/guide/EFP/post-production'
 ---
 
 # 收声方案

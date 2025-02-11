@@ -3,6 +3,9 @@ import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme-without-fonts'
 import './style.css'
 
+import { NolebaseInlineLinkPreviewPlugin } from '@nolebase/vitepress-plugin-inline-link-preview/client'
+import '@nolebase/vitepress-plugin-inline-link-preview/client/style.css'
+
 import './fonts.css'
 import './customize.css'
 
@@ -16,5 +19,6 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     // ...
+    app.use(NolebaseInlineLinkPreviewPlugin) 
   }
 }
