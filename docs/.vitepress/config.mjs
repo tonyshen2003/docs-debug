@@ -51,6 +51,7 @@ export default defineConfig({
             text: "现场制作",
             collapsed: true,
             items: [
+              { text: "系统搭建", link: "/guide/EFP/system-setup/" },
               { text: "摄影摄像", link: "/guide/EFP/Photography/" },
               { text: "机位设计", link: "/guide/EFP/camera-layout/" },
               { text: "导播切换", link: "/guide/EFP/live-switching/" },
