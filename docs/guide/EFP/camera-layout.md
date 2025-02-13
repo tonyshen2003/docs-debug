@@ -42,14 +42,14 @@ next:
 4. 预演与调整：在正式拍摄前，最好保证至少一次彩排预演。各机位摄像师按照拍摄流程进行拍摄，导播观察画面效果，检查各机位之间的配合。根据预演情况，及时对机位位置、拍摄参数等进行调整。
 
 ## 面向专门场景的机位参考
-1. 文艺演出（剧场）：
+### 1. 文艺演出（剧场）：
 - 舞台前方中轴线位置布置全景机位，负责拍摄舞台的正面全景和中景。
 - 舞台两侧设置侧面特写机位，展示演员的侧面动作和舞台调度。
 - 舞台中轴线布置正面特写机位，拍摄正面中景和特写。
 - 台前布置游机，可以低角度拍摄特殊视角的舞台，拍摄观众反应。
 - 观众席后方高处可以设置大全景机位，拍摄整个演出场地的氛围和观众反应。
 
-2. 会议讲座
+### 2. 会议讲座
 <div align=center>
  <img style="border-radius: 0.3125em " src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa54-7be9-44d9-febfe80f96e9.jpg" width = "90%" alt=""/>
  </div>
@@ -59,7 +59,7 @@ next:
 - 其他必要内容（一般需要单独获取 PPT）
 
 
-3. 体育赛事
+### 3. 体育赛事
 <div align=center>
  <img style="border-radius: 0.3125em " src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa4e-72af-4694-627297039823.jpg" width = "90%" alt=""/>
  <br>
@@ -75,7 +75,7 @@ next:
 |4| 摇臂机位 |  |  |
 |5| 长焦特写 |  | 长焦 |
 
-4. 音乐会
+### 4. 音乐会
 <div align=center>
 <img style="border-radius: 0.3125em " src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa4f-74fe-4410-92a335aca4af.jpg" width="90%" />
     <br>
