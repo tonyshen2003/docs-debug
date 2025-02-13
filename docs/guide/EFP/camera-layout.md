@@ -55,10 +55,17 @@ next:
 - 其他必要内容（一般需要单独获取 PPT）
 
 3. 体育赛事
-
-![小型运动会机位案例](https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa4e-72af-4694-627297039823.jpg)
-
-![音乐会机位参考](https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa4f-74fe-4410-92a335aca4af.jpg)
+<div align=center>
+ <img style="border-radius: 0.3125em " src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa4e-72af-4694-627297039823.jpg" width = "90%" alt=""/>
+ <br>
+ 小型运动会机位案例
+ </div>
+<br>
+<div align=center>
+<img style="border-radius: 0.3125em " src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa4f-74fe-4410-92a335aca4af.jpg" width="90%" />
+    <br>
+      音乐会机位参考
+</div>
 
 ## 融合新技术
 
