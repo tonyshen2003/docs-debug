@@ -58,5 +58,5 @@ next:
 ## 融合新技术
 
 ## 参考教程
-[常用应用场景机位架设分析【我是导播】] (https://www.bilibili.com/video/BV1Ya411u7ET/)
+[常用应用场景机位架设分析【我是导播】](https://www.bilibili.com/video/BV1Ya411u7ET/)
 
