@@ -42,9 +42,10 @@ next:
 4. 预演与调整：在正式拍摄前，最好保证至少一次彩排预演。各机位摄像师按照拍摄流程进行拍摄，导播观察画面效果，检查各机位之间的配合。根据预演情况，及时对机位位置、拍摄参数等进行调整。
 
 ## 面向专门场景的机位参考
-本部分参考网络资料[^1]
+本部分参考[网络资料^1]
 
 ### 1. 文艺演出（剧场）：
+
 - 舞台前方中轴线位置布置全景机位，负责拍摄舞台的正面全景和中景。
 - 舞台两侧设置侧面特写机位，展示演员的侧面动作和舞台调度。
 - 舞台中轴线布置正面特写机位，拍摄正面中景和特写。
@@ -83,6 +84,18 @@ next:
     <br>
       音乐会机位参考
 </div>
+
+### 5. 教室课程
+<div align=center>
+ <img style="border-radius: 0.3125em " src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa52-7a56-43f8-945a5896258e.jpg" width = "90%" alt=""/>
+ </div>
+
+
+### 6. 讲座访谈
+<div align=center>
+ <img style="border-radius: 0.3125em " src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa50-757d-41ae-0e8dcf34c1d3.jpg" width = "90%" alt=""/>
+</div>
+
 
 ## 融合新技术
 
