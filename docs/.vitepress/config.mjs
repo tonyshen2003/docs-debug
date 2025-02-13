@@ -1,6 +1,7 @@
 import { defineConfig } from "vitepress";
 import markdownItKatex from 'markdown-it-katex'
 import { InlineLinkPreviewElementTransform } from '@nolebase/vitepress-plugin-inline-link-preview/markdown-it'
+import footnote from 'markdown-it-footnote'
 
 // https://vitepress.dev/reference/site-config
 
@@ -149,7 +150,11 @@ export default defineConfig({
   markdown: {
     config: (md) => {
       md.use(markdownItKatex),
-      md.use(InlineLinkPreviewElementTransform) 
+      md.use(InlineLinkPreviewElementTransform),
+      md.use(footnote)
+    },
+    image: {
+      lazyLoading: true
     }
   },
 
