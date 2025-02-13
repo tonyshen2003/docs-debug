@@ -54,9 +54,14 @@ next:
 - 主讲人（讲台）正面特写
 - 其他必要内容（一般需要单独获取 PPT）
 
-1. 体育赛事
+3. 体育赛事
+
+![小型运动会机位案例](https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa4e-72af-4694-627297039823.jpg)
+
+![音乐会机位参考](https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa4f-74fe-4410-92a335aca4af.jpg)
+
 ## 融合新技术
 
 ## 参考教程
-[常用应用场景机位架设分析【我是导播】](https://www.bilibili.com/video/BV1Ya411u7ET/)
+**B 站视频：[常用应用场景机位架设分析【我是导播】](https://www.bilibili.com/video/BV1Ya411u7ET/)**
 
