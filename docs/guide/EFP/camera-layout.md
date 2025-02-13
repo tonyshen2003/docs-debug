@@ -50,9 +50,14 @@ next:
 - 观众席后方高处可以设置大全景机位，拍摄整个演出场地的氛围和观众反应。
 
 2. 会议讲座
+<div align=center>
+ <img style="border-radius: 0.3125em " src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa54-7be9-44d9-febfe80f96e9.jpg" width = "90%" alt=""/>
+ </div>
+ 
 - 场地正后方全景机位
 - 主讲人（讲台）正面特写
 - 其他必要内容（一般需要单独获取 PPT）
+
 
 3. 体育赛事
 <div align=center>
@@ -61,6 +66,16 @@ next:
  小型运动会机位案例
  </div>
 <br>
+
+| 机位编号 | 名称 | 拍摄内容 | 设备 |
+| ---- | ---- | ---- | ---- |
+|1| 讲台 | 主席台人物近景 | 长焦固定 |
+|2| 全景机位 | 全场居中大全景 | 广角 |
+|3| 1 | 方阵正面 | 中长焦变焦镜头 |
+|4| 摇臂机位 |  |  |
+|5| 长焦特写 |  | 长焦 |
+
+4. 音乐会
 <div align=center>
 <img style="border-radius: 0.3125em " src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa4f-74fe-4410-92a335aca4af.jpg" width="90%" />
     <br>
