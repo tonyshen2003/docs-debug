@@ -27,4 +27,8 @@ next:
 <br>摄影：周熠嘉、肖博洋
 <br>外联：许楚晗
 
+[苏州中学梦之队 20 周年舞蹈专场活动转播技术文案.pdf](https://szzxshumei.com/post/2025/shs-dt20-bt-retro-20250101/)
+
+[舞蹈团 20 周年开放日视频合集](https://szzxshumei.com/post/2025/wudaokaifangri20250101/)
+
 ---
