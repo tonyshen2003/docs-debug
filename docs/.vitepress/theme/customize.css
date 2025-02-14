@@ -44,6 +44,11 @@ a.VPLink.link.pager-link > span.desc {
     0 0 16px rgba(255, 255, 255, 0.12), 0 0 24px rgba(255, 255, 255, 0.08);
 }
 
+
+
+
+
+/* 图片格式自定义：圆角 + 灰色注释 */
 /* 图片容器 */
 .img-case {
   --radius: 0.3125em;

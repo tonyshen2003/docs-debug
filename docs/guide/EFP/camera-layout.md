@@ -57,35 +57,17 @@ next:
 
 ### 2. 会议讲座
 
-<div align=center>
- <img style="border-radius: 0.3125em " src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa54-7be9-44d9-febfe80f96e9.jpg" width = "90%" alt=""/>
- </div>
- 
+ <div class="img-case">
+  <img src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa54-7be9-44d9-febfe80f96e9.jpg" alt="会议讲座机位参考">
+  <small class="img-case__caption">会议讲座机位参考</small>
+</div>
+
 - 场地正后方全景机位
 - 主讲人（讲台）正面特写
 - 其他必要内容（一般需要单独获取 PPT）
 
 
 ### 3. 体育赛事
-
-<div class="img-case" align="center" style="margin: 2em 0;">
-  <img src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa4e-72af-4694-627297039823.jpg"
-       alt="运动会多机位布局示意图"
-       style="
-         --radius: 0.3125em;
-         display: block;
-         width: 90%;
-         border-radius: var(--radius);
-         box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-         margin: 0 auto;
-       ">
-  <small style="
-    display: inline-block;
-    color: #666;
-    margin-top: 0.8em;
-    font-size: 0.9em;
-  ">小型运动会机位布置案例图示</small>
-</div>
 
 <div class="img-case">
   <img src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa4e-72af-4694-627297039823.jpg" alt="运动会多机位布局示意图">
@@ -101,23 +83,25 @@ next:
 |5| 长焦特写 |  | 长焦 |
 
 ### 4. 音乐会
-<div align=center>
-<img style="border-radius: 0.3125em " src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa4f-74fe-4410-92a335aca4af.jpg" width="90%" />
-    <br>
-      音乐会机位参考
+
+<div class="img-case">
+  <img src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa4f-74fe-4410-92a335aca4af.jpg" alt="音乐会机位参考">
+  <small class="img-case__caption">音乐会机位参考</small>
 </div>
 
 ### 5. 教室课程
-<div align=center>
- <img style="border-radius: 0.3125em " src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa52-7a56-43f8-945a5896258e.jpg" width = "90%" alt=""/>
- </div>
 
-
-### 6. 讲座访谈
-<div align=center>
- <img style="border-radius: 0.3125em " src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa50-757d-41ae-0e8dcf34c1d3.jpg" width = "90%" alt=""/>
+<div class="img-case">
+  <img src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa52-7a56-43f8-945a5896258e.jpg" alt="机位参考">
+  <small class="img-case__caption">机位参考</small>
 </div>
 
+### 6. 讲座访谈
+
+<div class="img-case">
+  <img src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa50-757d-41ae-0e8dcf34c1d3.jpg" alt="机位参考">
+  <small class="img-case__caption">访谈讲座机位参考</small>
+</div>
 
 ## 融合新技术
 
