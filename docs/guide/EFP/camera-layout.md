@@ -73,6 +73,28 @@ next:
 <img style="border-radius: 0.3125em " src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa4e-72af-4694-627297039823.jpg" width="90%" /><br>小型运动会机位案例
 </div>
 
+
+<div class="img-case" align="center" style="margin: 2em 0;">
+  <img src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa4e-72af-4694-627297039823.jpg"
+       alt="运动会多机位布局示意图"
+       style="
+         --radius: 0.3125em;
+         display: block;
+         width: 90%;
+         border-radius: var(--radius);
+         box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+         margin: 0 auto;
+       ">
+
+  <small style="
+    display: inline-block;
+    color: #666;
+    margin-top: 0.8em;
+    font-size: 0.9em;
+  ">小型运动会机位布置案例图示</small>
+  
+</div>
+
 | 机位编号 | 名称 | 拍摄内容 | 设备 |
 | ---- | ---- | ---- | ---- |
 |1| 讲台 | 主席台人物近景 | 长焦固定 |
