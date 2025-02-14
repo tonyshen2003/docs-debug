@@ -87,6 +87,11 @@ next:
   ">小型运动会机位布置案例图示</small>
 </div>
 
+<div class="img-case">
+  <img src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa4e-72af-4694-627297039823.jpg" alt="运动会多机位布局示意图">
+  <small class="img-case__caption">小型运动会机位布置案例图示</small>
+</div>
+
 | 机位编号 | 名称 | 拍摄内容 | 设备 |
 | ---- | ---- | ---- | ---- |
 |1| 讲台 | 主席台人物近景 | 长焦固定 |
