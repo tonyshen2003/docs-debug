@@ -68,11 +68,10 @@ next:
 
 ### 3. 体育赛事
 
-<div style="text-align: center">
-< img src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa4e-72af-4694-627297039823.jpg"/>
-<br>小型运动会机位案例
+<div align=center>
+<img style="border-radius: 0.3125em " src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa4e-72af-4694-627297039823.jpg" width="90%" />
+    <br>小型运动会机位案例
 </div>
-
 
 | 机位编号 | 名称 | 拍摄内容 | 设备 |
 | ---- | ---- | ---- | ---- |
