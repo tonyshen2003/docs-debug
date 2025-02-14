@@ -56,6 +56,7 @@ next:
 - 观众席后方高处可以设置大全景机位，拍摄整个演出场地的氛围和观众反应。
 
 ### 2. 会议讲座
+
 <div align=center>
  <img style="border-radius: 0.3125em " src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa54-7be9-44d9-febfe80f96e9.jpg" width = "90%" alt=""/>
  </div>
@@ -66,12 +67,10 @@ next:
 
 
 ### 3. 体育赛事
-<div align=center>
- <img style="border-radius: 0.3125em " src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa4e-72af-4694-627297039823.jpg" width = "90%" alt=""/>
- <br>
- 小型运动会机位案例
- </div>
-<br>
+
+<div style="text-align: center">
+![小型运动会机位案例](https://szzxshumei.com/wp-content/uploads/2025/02/00000fd1-fa4e-72af-4694-627297039823.jpg)
+</div>
 
 | 机位编号 | 名称 | 拍摄内容 | 设备 |
 | ---- | ---- | ---- | ---- |
