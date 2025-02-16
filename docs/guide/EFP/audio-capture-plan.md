@@ -14,4 +14,6 @@ next:
 多机位制作可以选择的收声方案种类较多，可以根据活动类型、经费、需求确定需要在收音方面的工作量。按复杂程度依次排序可以粗略分为：相机麦克风直接录制、使用手机专门采集需要的声音、从调音台录制、专门架设麦克风录制。
 
 ## 常见立体声收音方法
-录音中有三种最常见的立体声麦克风收音变量：AB、XY 和 MS。立体声录音包含两种通道信号。请参考苹果官方发布的收音方法：[立体声麦克风收音方法](https://support.apple.com/zh-cn/guide/logicpro/lgcef240ddb5/mac)
+录音中有三种最常见的立体声麦克风收音变量：AB、XY 和 MS。立体声录音包含两种通道信号。请参考苹果[^1]官方发布的收音方法：[立体声麦克风收音方法](https://support.apple.com/zh-cn/guide/logicpro/lgcef240ddb5/mac)
+
+[^1]：Apple.(2025).Mac 版 LogicPro 中的立体声麦克风收音方法.APPLE-Support.<https://support.apple.com/zh-cn/guide/logicpro/lgcef240ddb5/mac>
