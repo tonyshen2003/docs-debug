@@ -9,4 +9,9 @@ next:
 ---
 
 # 现场系统搭建
+## 常规转播系统介绍
 
+<div class="img-case">
+  <img src="https://szzxshumei.com/wp-content/uploads/2025/02/00000fd2-2325-75fa-443d-b440ef05cf0d.jpg" alt="常规转播系统示意图">
+  <small class="img-case__caption">常规转播系统示意图</small>
+</div>
