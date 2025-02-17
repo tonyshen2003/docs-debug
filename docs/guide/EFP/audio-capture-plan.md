@@ -1,4 +1,8 @@
 ---
+head:
+  - - link
+    - rel: stylesheet
+      href: https://cdn.jsdelivr.net/npm/katex@0.6.0/dist/katex.min.css
 title: 收声方案
 prev:
   text: '导播切换'
@@ -16,4 +20,4 @@ next:
 ## 常见立体声收音方法
 录音中有三种最常见的立体声麦克风收音变量：AB、XY 和 MS。立体声录音包含两种通道信号。请参考苹果[^1]官方发布的收音方法：[立体声麦克风收音方法](https://support.apple.com/zh-cn/guide/logicpro/lgcef240ddb5/mac)
 
-[^1]：Apple.(2025).Mac 版 LogicPro 中的立体声麦克风收音方法.APPLE-Support.<https://support.apple.com/zh-cn/guide/logicpro/lgcef240ddb5/mac>
+[^1]: Apple.(2025).Mac 版 LogicPro 中的立体声麦克风收音方法.APPLE-Support.<https://support.apple.com/zh-cn/guide/logicpro/lgcef240ddb5/mac>
