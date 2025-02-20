@@ -21,6 +21,10 @@ next: false
 @影视飓风 - [爆肝 30 天，影视飓风终于有了一辆转播车！](https://www.bilibili.com/video/BV1Jy4y1i7zw/)<br>
 `流程分享` `转播车` `设备` `科普` 
 
+### 转播案例分享视频
+@你好关键帧（浙江传媒学院转播班） - [学生团队是如何转播校内晚会的？入海流迎新音乐会幕后纪实](https://www.bilibili.com/video/BV1ut421A7Zy/)<br>
+`流程分享` `专业` `EFP制作`  
+
 
 ## 机位架设
 @obsproject - [1.2. 常用应用场景机位架设分析【我是导播】](https://www.bilibili.com/video/BV1Ya411u7ET/)
@@ -35,3 +39,5 @@ next: false
 @传媒技术王队长 - [多机位直播色彩一致性调整](https://www.bilibili.com/video/BV1iF4m1F78J/)
 <br>
 `色彩管理` `色彩科学` `一级调色` `色彩匹配` `前期技术`
+
+
