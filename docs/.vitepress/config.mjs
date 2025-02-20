@@ -75,6 +75,43 @@ export default defineConfig({
         collapsed: false,
         items: [
           {
+            text: "软件教程合集",
+            collapsed: true,
+            items: [
+              { text: "Adobe Premiere Pro", link: "/guide/EFP/event-planning/" },
+              { text: "DaVinci Resolve", link: "/guide/EFP/production-requirements/" },
+              { text: "其他软件", link: "/guide/EFP/equipment-list/" },
+            ],
+          },
+          {
+            text: "调色实践",
+            collapsed: true,
+            items: [
+              { text: "其他软件", link: "/guide/EFP/equipment-list/" },
+            ],
+          },
+          {
+            text: "音频处理与混音",
+            collapsed: true,
+            items: [
+              { text: "其他软件", link: "/guide/EFP/equipment-list/" },
+            ],
+          },
+          {
+            text: "VFX",
+            collapsed: true,
+            items: [
+              { text: "其他软件", link: "/guide/EFP/equipment-list/" },
+            ],
+          },
+        ],
+      },
+
+      {
+        text: "数字媒体技术 / Digital-Media-Tech ",
+        collapsed: false,
+        items: [
+          {
             text: "前期准备",
             collapsed: true,
             items: [
