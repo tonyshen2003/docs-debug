@@ -71,6 +71,22 @@ export default defineConfig({
       },
 
       {
+        text: "数字后期制作 / Post-production Workflow ",
+        collapsed: false,
+        items: [
+          {
+            text: "前期准备",
+            collapsed: true,
+            items: [
+              { text: "活动策划", link: "/guide/EFP/event-planning/" },
+              { text: "制作需求", link: "/guide/EFP/production-requirements/" },
+              { text: "设备清单", link: "/guide/EFP/equipment-list/" },
+            ],
+          },
+        ],
+      },
+
+      {
         text: "About",
         items: [{ text: "Our Team", link: "/about/team" }],
       },
