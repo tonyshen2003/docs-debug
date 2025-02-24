@@ -23,7 +23,7 @@ next:
 ## 常见收音设备和使用场景
 | 设备类型 | 使用场景 | 推荐型号 | 图片 |
 | ---| ---| --- | ---|
-| 无线领夹麦 | 主持人、嘉宾讲话 | Rode Wireless GO II | ![](https://edge.rode.com//images/products/variants/66/rode-wigo2_hero_image_final_2-rgb_1080x1080.png) |
+| 无线领夹麦 | 主持人、嘉宾讲话 | Rode Wireless GO II | ![](https://edge.rode.com//images/products/variants/66/rode-wigo2_hero_image_final_2-rgb_1080x1080.png =600x600) |
 | 枪式麦克风 | 舞台表演/环境声采集 | 	Sennheiser MKE 600 | ![](https://www.sennheiser.com/cdn-cgi/image/width=1920,format=avif,quality=75/globalassets/digizuite/38531-en-mke_600_mzh_600_product_shot_cutout_front_view.png.png/SennheiserFullWidth) |
 | 界面麦克风 | 圆桌会议/多人访谈 |Shure MXA910 |  | 
 | 便携录音机 | 备份音轨/环境音录制 | 	Zoom H6 | ![ZOOM](https://zoomcorp.com/media/original_images/H6AB_wShadow2.png.768x0_q60.png) |
