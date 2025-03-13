@@ -43,7 +43,7 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: "活动策划", link: "/guide/EFP/event-planning/" },
-              { text: "制作需求", link: "/guide/EFP/production-requirements/" },
+              { text: "岗位分工", link: "/guide/EFP/production-requirements/" },
               { text: "设备清单", link: "/guide/EFP/equipment-list/" },
             ],
           },
