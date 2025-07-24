@@ -132,7 +132,7 @@ prev:
 <CollapsibleCard>
 
 
-<template #icon><i class="platform-icon" style="font-style:normal;">B 站</i></template>
+<template #icon><i class="fab fa-vimeo-v platform-icon"></i></template>
 <template #title>Bilibili</template>
 
 #### 推荐设置
@@ -188,9 +188,9 @@ prev:
 <template #icon><i class="fas fa-video platform-icon"></i></template>
 <template #title>Zoom Webinar / Meetings</template>
 
-#### 视频分享设置
+#### 视频分��设置
 - **容器格式**：MP4
-- **视频编码**：H.264
+- **��频编码**：H.264
 - **分辨率**：720p 或 1080p
 - **帧率**：30fps
 - **比特率**：3-6 Mbps
