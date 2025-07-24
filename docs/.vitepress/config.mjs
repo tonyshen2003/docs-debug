@@ -71,37 +71,70 @@ export default defineConfig({
       },
 
       {
-        text: "数字后期制作 / Post-production Workflow ",
+        text: "数字后期制作 / Post-production Workflow",
         collapsed: false,
         items: [
           {
-            text: "软件教程合集",
+            text: "基础知识",
             collapsed: true,
             items: [
-              { text: "Adobe Premiere Pro", link: "/guide/EFP/event-planning/" },
-              { text: "DaVinci Resolve", link: "/guide/EFP/production-requirements/" },
-              { text: "其他软件", link: "/guide/EFP/equipment-list/" },
+              { text: "后期制作流程概述", link: "/guide/digital-video-post-production/basics/workflow-overview" },
+              { text: "视频格式与编码", link: "/guide/digital-video-post-production/basics/video-formats" },
+              { text: "项目管理与素材整理", link: "/guide/digital-video-post-production/basics/project-management" },
             ],
           },
           {
-            text: "调色实践",
+            text: "软件教程",
             collapsed: true,
             items: [
-              { text: "其他软件", link: "/guide/EFP/equipment-list/" },
+              { text: "Adobe Premiere Pro", link: "/guide/digital-video-post-production/software/premiere-pro" },
+              { text: "DaVinci Resolve", link: "/guide/digital-video-post-production/software/davinci-resolve" },
+              { text: "After Effects (即将推出)", link: "#" },
+              { text: "Audition (即将推出)", link: "#" },
             ],
           },
           {
-            text: "音频处理与混音",
+            text: "视频编辑技巧",
             collapsed: true,
             items: [
-              { text: "其他软件", link: "/guide/EFP/equipment-list/" },
+              { text: "剪辑理论与节奏", link: "/guide/digital-video-post-production/editing/theory" },
+              { text: "转场与效果 (即将推出)", link: "#" },
+              { text: "多机位剪辑 (即将推出)", link: "#" },
             ],
           },
           {
-            text: "VFX",
+            text: "调色技术",
             collapsed: true,
             items: [
-              { text: "其他软件", link: "/guide/EFP/equipment-list/" },
+              { text: "色彩理论基础", link: "/guide/digital-video-post-production/color/theory" },
+              { text: "LUT与预设使用 (即将推出)", link: "#" },
+              { text: "场景匹配与风格化 (即将推出)", link: "#" },
+            ],
+          },
+          {
+            text: "音频处理",
+            collapsed: true,
+            items: [
+              { text: "音频清理与修复", link: "/guide/digital-video-post-production/audio/cleanup" },
+              { text: "混音基础 (即将推出)", link: "#" },
+              { text: "音效与配乐 (即将推出)", link: "#" },
+            ],
+          },
+          {
+            text: "特效制作 (即将推出)",
+            collapsed: true,
+            items: [
+              { text: "基础视觉效果", link: "#" },
+              { text: "动态图形设计", link: "#" },
+              { text: "合成技术", link: "#" },
+            ],
+          },
+          {
+            text: "输出与发布",
+            collapsed: true,
+            items: [
+              { text: "导出设置优化", link: "/guide/digital-video-post-production/output/export-settings" },
+              { text: "平台适配指南 (即将推出)", link: "#" },
             ],
           },
         ],
