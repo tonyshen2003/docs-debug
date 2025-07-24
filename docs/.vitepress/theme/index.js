@@ -1,6 +1,7 @@
 // https://vitepress.dev/guide/custom-theme
 import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme-without-fonts'
+import CollapsibleCard from '../components/CollapsibleCard.vue'
 import './style.css'
 
 import { NolebaseInlineLinkPreviewPlugin } from '@nolebase/vitepress-plugin-inline-link-preview/client'
@@ -19,6 +20,7 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     // ...
-    app.use(NolebaseInlineLinkPreviewPlugin) 
+    app.use(NolebaseInlineLinkPreviewPlugin)
+    app.component('CollapsibleCard', CollapsibleCard) 
   }
 }

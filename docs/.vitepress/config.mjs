@@ -272,6 +272,7 @@ export default defineConfig({
 });
 
 const customElements = [
+  'collapsible-card',
   'math',
   'maction',
   'maligngroup',

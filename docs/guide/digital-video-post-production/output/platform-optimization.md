@@ -24,9 +24,9 @@ prev:
 
 ## 社交媒体平台
 
-<div class="platform-card">
-
-<h3><i class="fab fa-youtube platform-icon"></i>YouTube</h3>
+<CollapsibleCard>
+  <template #icon><i class="fab fa-youtube platform-icon"></i></template>
+  <template #title>YouTube</template>
 
 #### 推荐设置
 - **容器格式**：MP4
@@ -48,11 +48,11 @@ prev:
 - 最大支持上传 12 小时，文件大小不限（已验证账户）
 - 支持章节标记、字幕和端点卡片
 
-</div>
+</CollapsibleCard>
 
-<div class="platform-card">
-
-<h3><i class="fab fa-instagram platform-icon"></i>Instagram</h3>
+<CollapsibleCard>
+  <template #icon><i class="fab fa-instagram platform-icon"></i></template>
+  <template #title>Instagram</template>
 
 #### Feed 视频
 - **容器格式**：MP4
@@ -80,12 +80,11 @@ prev:
 - 为重要内容预留安全区域，避免被界面元素遮挡
 
 [Instagram 视频规格](https://help.instagram.com/1631821640426723)
+</CollapsibleCard>
 
-</div>
-
-<div class="platform-card">
-
-<h3><i class="fab fa-tiktok platform-icon"></i>TikTok</h3>
+<CollapsibleCard>
+  <template #icon><i class="fab fa-tiktok platform-icon"></i></template>
+  <template #title>TikTok</template>
 
 #### 推荐设置
 - **容器格式**：MP4
@@ -101,12 +100,11 @@ prev:
 - 竖屏视频优先推荐
 - 短视频内容（15 - 60 秒）更易传播
 - 支持特效和音乐库
+</CollapsibleCard>
 
-</div>
-
-<div class="platform-card">
-
-<h3><i class="fab fa-vimeo-v platform-icon"></i>Vimeo</h3>
+<CollapsibleCard>
+  <template #icon><i class="fab fa-vimeo-v platform-icon"></i></template>
+  <template #title>Vimeo</template>
 
 #### 推荐设置
 - **容器格式**：MP4
@@ -121,6 +119,7 @@ prev:
 - **音频编码**：AAC - LC
 - **音频比特率**：320 kbps
 - **采样率**：48 kHz
+</CollapsibleCard>
 
 #### 特殊考虑
 - Vimeo 使用高质量转码，建议上传高比特率视频
@@ -130,11 +129,12 @@ prev:
 
 [Vimeo 编码指南](https://vimeo.com/help/compression)
 
-</div>
 
-<div class="platform-card">
+<CollapsibleCard>
 
-<h3><i class="platform-icon" style="font-style:normal;">B站</i>Bilibili</h3>
+
+<template #icon><i class="platform-icon" style="font-style:normal;">B 站</i></template>
+<template #title>Bilibili</template>
 
 #### 推荐设置
 - **容器格式**：MP4/FLV
@@ -157,14 +157,13 @@ prev:
 - 视频开头的前 5 秒尤为重要
 
 [Bilibili 创作中心](https://member.bilibili.com/platform/upload/video/frame)
-
-</div>
+</CollapsibleCard>
 
 ## 企业与教育平台
 
-<div class="platform-card">
-
-<h3><i class="fab fa-microsoft platform-icon"></i>Microsoft Stream / SharePoint</h3>
+<CollapsibleCard>
+<template #icon><i class="fab fa-microsoft platform-icon"></i></template>
+<template #title>Microsoft Stream / SharePoint</template>
 
 #### 推荐设置
 - **容器格式**：MP4
@@ -184,12 +183,11 @@ prev:
 - 考虑内容权限设置
 
 [Microsoft Stream 指南](https://support.microsoft.com/zh-cn/office/upload-a-video-to-microsoft-stream-4c1370cb-7c5b-4c07-a4e5-b4c2c23c7d84)
+</CollapsibleCard>
 
-</div>
-
-<div class="platform-card">
-
-<h3><i class="fas fa-video platform-icon"></i>Zoom Webinar / Meetings</h3>
+<CollapsibleCard>
+<template #icon><i class="fas fa-video platform-icon"></i></template>
+<template #title>Zoom Webinar / Meetings</template>
 
 #### 视频分享设置
 - **容器格式**：MP4
@@ -207,14 +205,13 @@ prev:
 - 考虑参会者可能使用的各种设备大小
 
 [Zoom 视频分享最佳实践](https://support.zoom.us/hc/en-us/articles/202000163-Sharing-Computer-Sound-During-Screen-Sharing)
-
-</div>
+</CollapsibleCard>
 
 ## 广播与专业分发
 
-<div class="platform-card">
-
-<h3><i class="fas fa-tv platform-icon"></i>广播电视标准</h3>
+<CollapsibleCard>
+<template #icon><i class="fas fa-tv platform-icon"></i></template>
+<template #title>广播电视标准</template>
 
 #### 标准交付规格
 - **容器格式**：MXF / MOV
@@ -240,12 +237,11 @@ prev:
 - 可能需要提供无字幕的干净版本
 
 [EBU 交付规范](https://tech.ebu.ch/publications)
+</CollapsibleCard>
 
-</div>
-
-<div class="platform-card">
-
-<h3><i class="fas fa-film platform-icon"></i>DCP（数字电影包）</h3>
+<CollapsibleCard>
+<template #icon><i class="fas fa-film platform-icon"></i></template>
+<template #title>DCP（数字电影包）</template>
 
 #### 电影院 DCP 标准
 - **容器格式**：MXF（SMPTE 或 InterOp）
@@ -266,8 +262,7 @@ prev:
 - 可能需要不同的字幕版本
 
 [DCP 创建指南](https://www.dcinematools.com)
-
-</div>
+</CollapsibleCard>
 
 ## 导出模板使用指南
 
@@ -311,49 +306,4 @@ prev:
 - [DaVinci Resolve 教程](/guide/digital-video-post-production/software/davinci-resolve)
 
 ---
-
-<style>
-.platform-card {
-  margin: 20px 0;
-  padding: 20px;
-  border-radius: 8px;
-  background-color: var(--vp-c-bg-soft);
-  border-left: 4px solid var(--vp-c-brand);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-.platform-card h3 {
-  margin-top: 0;
-  color: var(--vp-c-brand);
-}
-
-.platform-card img {
-  max-height: 60px;
-  margin-bottom: 15px;
-}
-
-.platform-card .platform-icon {
-  font-size: 1.5rem;
-  color: var(--vp-c-brand);
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 12px;
-  margin-bottom: 0;
-}
-
-.platform-card h3 {
-  display: inline-flex;
-  align-items: center;
-  margin-top: 0;
-  vertical-align: middle;
-}
-
-.platform-card h4 {
-  font-weight: 600;
-  margin: 15px 0 10px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid var(--vp-c-divider);
-}
-</style>
-
 本文提供的导出模板仅作为起点，最佳设置可能因具体内容和目标平台的更新而变化。始终进行测试并收集反馈，以不断优化你的导出设置。
