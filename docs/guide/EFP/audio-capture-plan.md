@@ -48,5 +48,19 @@ next:
 - 手机作为应急录音机（推荐 RecForge II APP）
 - 利用腾讯会议软件录制独立发言者音轨
 
+## 相关文档
+- [机位设计](/guide/EFP/camera-layout)
+- [导播切换](/guide/EFP/live-switching)
+- [后期制作](/guide/EFP/post-production)
+- [设备清单](/guide/EFP/equipment-list)
+- [系统搭建](/guide/EFP/system-setup)
+- [活动策划](/guide/EFP/event-planning)
+- [EFP 案例](/guide/EFP/EFP-examples)
+- [参考资料](/guide/EFP/reference-materials)
+
+---
+
+> - 立体声麦克风收音方法详见 [Apple 官方文档](https://support.apple.com/zh-cn/guide/logicpro/lgcef240ddb5/mac)
+> - 推荐设备说明书：[Zoom H6 说明书](https://zoomcorp.com/media/documents/C_H6.pdf)
 
 [^1]: Apple.(2025).Mac 版 LogicPro 中的立体声麦克风收音方法.APPLE-Support.<https://support.apple.com/zh-cn/guide/logicpro/lgcef240ddb5/mac>

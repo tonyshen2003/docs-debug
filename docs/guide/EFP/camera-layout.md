@@ -106,3 +106,17 @@ next:
 ## 融合新技术
 
 ## 参考教程
+
+## 相关文档
+- [导播切换](/guide/EFP/live-switching)
+- [收声方案](/guide/EFP/audio-capture-plan)
+- [后期制作](/guide/EFP/post-production)
+- [设备清单](/guide/EFP/equipment-list)
+- [系统搭建](/guide/EFP/system-setup)
+- [活动策划](/guide/EFP/event-planning)
+- [EFP 案例](/guide/EFP/EFP-examples)
+- [参考资料](/guide/EFP/reference-materials)
+
+---
+
+> 机位布置案例可参考 [B站 EFP 机位布置分析](https://www.bilibili.com/video/BV1Ya411u7ET/)
