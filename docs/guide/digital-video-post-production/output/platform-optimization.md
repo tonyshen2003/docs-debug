@@ -26,9 +26,7 @@ prev:
 
 <div class="platform-card">
 
-### YouTube
-<!-- 替换为 YouTube 相关 Unicode 字符，这里使用 📺 表示视频平台 -->
-📺
+<h3><i class="fab fa-youtube platform-icon"></i>YouTube</h3>
 
 #### 推荐设置
 - **容器格式**：MP4
@@ -54,9 +52,7 @@ prev:
 
 <div class="platform-card">
 
-### Instagram
-<!-- 替换为 Instagram 相关 Unicode 字符，这里使用 📷 表示拍照、分享类平台 -->
-📷
+<h3><i class="fab fa-instagram platform-icon"></i>Instagram</h3>
 
 #### Feed 视频
 - **容器格式**：MP4
@@ -89,9 +85,7 @@ prev:
 
 <div class="platform-card">
 
-### TikTok
-<!-- 替换为 TikTok 相关 Unicode 字符，这里使用 🎵 表示有音乐、短视频特色的平台 -->
-🎵
+<h3><i class="fab fa-tiktok platform-icon"></i>TikTok</h3>
 
 #### 推荐设置
 - **容器格式**：MP4
@@ -112,11 +106,7 @@ prev:
 
 <div class="platform-card">
 
-### Vimeo
-<!-- 替换为 Vimeo 相关 Unicode 字符，使用 🎬 表示影视、专业视频平台 -->
-🎬
-
-<!-- Vimeo Logo 图片暂缺 -->
+<h3><i class="fab fa-vimeo-v platform-icon"></i>Vimeo</h3>
 
 #### 推荐设置
 - **容器格式**：MP4
@@ -144,11 +134,7 @@ prev:
 
 <div class="platform-card">
 
-### Bilibili
-<!-- 替换为 B 站相关 Unicode 字符，使用 🐱 结合 B 站的二次元文化特色 -->
-🐱
-
-<!-- Bilibili Logo 图片暂缺 -->
+<h3><i class="platform-icon" style="font-style:normal;">B站</i>Bilibili</h3>
 
 #### 推荐设置
 - **容器格式**：MP4/FLV
@@ -178,11 +164,7 @@ prev:
 
 <div class="platform-card">
 
-### Microsoft Stream / SharePoint
-<!-- 替换为 Microsoft 相关 Unicode 字符，使用 🔳 表示微软相关 -->
-🔳
-
-<!-- Microsoft Logo 图片暂缺 -->
+<h3><i class="fab fa-microsoft platform-icon"></i>Microsoft Stream / SharePoint</h3>
 
 #### 推荐设置
 - **容器格式**：MP4
@@ -207,9 +189,7 @@ prev:
 
 <div class="platform-card">
 
-### Zoom Webinar / Meetings
-
-<!-- Zoom Logo 图片暂缺 -->
+<h3><i class="fas fa-video platform-icon"></i>Zoom Webinar / Meetings</h3>
 
 #### 视频分享设置
 - **容器格式**：MP4
@@ -234,9 +214,7 @@ prev:
 
 <div class="platform-card">
 
-### 广播电视标准
-
-<!-- Broadcast Logo 图片暂缺 -->
+<h3><i class="fas fa-tv platform-icon"></i>广播电视标准</h3>
 
 #### 标准交付规格
 - **容器格式**：MXF / MOV
@@ -267,9 +245,7 @@ prev:
 
 <div class="platform-card">
 
-### DCP（数字电影包）
-
-<!-- DCP Logo 图片暂缺 -->
+<h3><i class="fas fa-film platform-icon"></i>DCP（数字电影包）</h3>
 
 #### 电影院 DCP 标准
 - **容器格式**：MXF（SMPTE 或 InterOp）
@@ -354,6 +330,22 @@ prev:
 .platform-card img {
   max-height: 60px;
   margin-bottom: 15px;
+}
+
+.platform-card .platform-icon {
+  font-size: 1.5rem;
+  color: var(--vp-c-brand);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px;
+  margin-bottom: 0;
+}
+
+.platform-card h3 {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 0;
+  vertical-align: middle;
 }
 
 .platform-card h4 {
