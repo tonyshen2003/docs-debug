@@ -11,6 +11,9 @@
     "clean": "yarn cache clean"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.0.0",
+    "@fortawesome/free-brands-svg-icons": "^7.0.0",
+    "@fortawesome/vue-fontawesome": "^3.1.1",
     "markdown-it-footnote": "^4.0.0",
     "markdown-it-katex": "^2.0.3"
   }

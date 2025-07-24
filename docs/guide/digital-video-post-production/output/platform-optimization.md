@@ -27,8 +27,8 @@ prev:
 <div class="platform-card">
 
 ### YouTube
-
-![YouTube Logo](/images/digital-video-post-production/youtube-logo.png)
+<!-- 替换为 YouTube 相关 Unicode 字符，这里使用 📺 表示视频平台 -->
+📺
 
 #### 推荐设置
 - **容器格式**：MP4
@@ -50,15 +50,13 @@ prev:
 - 最大支持上传 12 小时，文件大小不限（已验证账户）
 - 支持章节标记、字幕和端点卡片
 
-[YouTube 上传指南](https://support.google.com/youtube/answer/1722171)
-
 </div>
 
 <div class="platform-card">
 
 ### Instagram
-
-![Instagram Logo](/images/digital-video-post-production/instagram-logo.png)
+<!-- 替换为 Instagram 相关 Unicode 字符，这里使用 📷 表示拍照、分享类平台 -->
+📷
 
 #### Feed 视频
 - **容器格式**：MP4
@@ -92,36 +90,33 @@ prev:
 <div class="platform-card">
 
 ### TikTok
-
-![TikTok Logo](/images/digital-video-post-production/tiktok-logo.png)
+<!-- 替换为 TikTok 相关 Unicode 字符，这里使用 🎵 表示有音乐、短视频特色的平台 -->
+🎵
 
 #### 推荐设置
 - **容器格式**：MP4
 - **视频编码**：H.264
-- **分辨率**：1080×1920（9:16 垂直视频）
+- **分辨率**：竖屏 1080×1920
 - **帧率**：30fps 或 60fps
-- **比特率**：5-8 Mbps
-- **最大文件大小**：500MB（iOS）/ 2GB（桌面）
-- **最大时长**：10 分钟
-- **音频编码**：AAC，192kbps
+- **比特率**：4 - 8 Mbps
+- **音频编码**：AAC
+- **音频比特率**：128 kbps
+- **采样率**：44.1 kHz 或 48 kHz
 
 #### 特殊考虑
-- 优化垂直视频体验
-- 音频质量对 TikTok 内容至关重要
-- 内容开头 3 秒极其重要，影响留存率
-- 避免在视频边缘放置重要内容
-
-[TikTok 创作者门户](https://www.tiktok.com/creators/creator-portal/)
+- 竖屏视频优先推荐
+- 短视频内容（15 - 60 秒）更易传播
+- 支持特效和音乐库
 
 </div>
-
-## 专业视频平台
 
 <div class="platform-card">
 
 ### Vimeo
+<!-- 替换为 Vimeo 相关 Unicode 字符，使用 🎬 表示影视、专业视频平台 -->
+🎬
 
-![Vimeo Logo](/images/digital-video-post-production/vimeo-logo.png)
+<!-- Vimeo Logo 图片暂缺 -->
 
 #### 推荐设置
 - **容器格式**：MP4
@@ -131,9 +126,9 @@ prev:
   - 专业账户：最高 8K
 - **帧率**：与源材料匹配（最高 60fps）
 - **比特率**：
-  - 1080p：10-20 Mbps
-  - 4K：30-60 Mbps
-- **音频编码**：AAC-LC
+  - 1080p：10 - 20 Mbps
+  - 4K：30 - 60 Mbps
+- **音频编码**：AAC - LC
 - **音频比特率**：320 kbps
 - **采样率**：48 kHz
 
@@ -150,8 +145,10 @@ prev:
 <div class="platform-card">
 
 ### Bilibili
+<!-- 替换为 B 站相关 Unicode 字符，使用 🐱 结合 B 站的二次元文化特色 -->
+🐱
 
-![Bilibili Logo](/images/digital-video-post-production/bilibili-logo.png)
+<!-- Bilibili Logo 图片暂缺 -->
 
 #### 推荐设置
 - **容器格式**：MP4/FLV
@@ -161,8 +158,8 @@ prev:
   - 最高支持：4K
 - **帧率**：24fps 或 30fps
 - **比特率**：
-  - 1080p：6-12 Mbps
-  - 4K：15-30 Mbps
+  - 1080p：6 - 12 Mbps
+  - 4K：15 - 30 Mbps
 - **音频编码**：AAC
 - **音频比特率**：192 kbps
 - **最大文件大小**：8GB（普通用户）
@@ -182,15 +179,17 @@ prev:
 <div class="platform-card">
 
 ### Microsoft Stream / SharePoint
+<!-- 替换为 Microsoft 相关 Unicode 字符，使用 🔳 表示微软相关 -->
+🔳
 
-![Microsoft Logo](/images/digital-video-post-production/microsoft-logo.png)
+<!-- Microsoft Logo 图片暂缺 -->
 
 #### 推荐设置
 - **容器格式**：MP4
 - **视频编码**：H.264
 - **分辨率**：1080p（最高）
 - **帧率**：30fps
-- **比特率**：6-10 Mbps
+- **比特率**：6 - 10 Mbps
 - **音频编码**：AAC
 - **音频比特率**：128 kbps
 - **最大文件大小**：10GB
@@ -210,7 +209,7 @@ prev:
 
 ### Zoom Webinar / Meetings
 
-![Zoom Logo](/images/digital-video-post-production/zoom-logo.png)
+<!-- Zoom Logo 图片暂缺 -->
 
 #### 视频分享设置
 - **容器格式**：MP4
@@ -237,7 +236,7 @@ prev:
 
 ### 广播电视标准
 
-![Broadcast Logo](/images/digital-video-post-production/broadcast-logo.png)
+<!-- Broadcast Logo 图片暂缺 -->
 
 #### 标准交付规格
 - **容器格式**：MXF / MOV
@@ -270,7 +269,7 @@ prev:
 
 ### DCP（数字电影包）
 
-![DCP Logo](/images/digital-video-post-production/dcp-logo.png)
+<!-- DCP Logo 图片暂缺 -->
 
 #### 电影院 DCP 标准
 - **容器格式**：MXF（SMPTE 或 InterOp）
