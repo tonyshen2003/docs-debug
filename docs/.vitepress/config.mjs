@@ -133,8 +133,8 @@ export default defineConfig({
             text: "输出与发布",
             collapsed: true,
             items: [
-              { text: "导出设置优化", link: "/guide/digital-video-post-production/output/export-settings" },
-              { text: "平台适配指南 (即将推出)", link: "#" },
+              { text: "导出设置基础", link: "/guide/digital-video-post-production/output/export-settings" },
+              { text: "平台导出模板", link: "/guide/digital-video-post-production/output/platform-optimization" },
             ],
           },
         ],

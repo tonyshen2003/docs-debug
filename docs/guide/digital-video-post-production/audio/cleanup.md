@@ -22,27 +22,27 @@
 ## 音频清理工具
 
 ### 软件选择
-- **Adobe Audition**：专业音频处理软件，集成于Adobe Creative Cloud
+- **Adobe Audition**：专业音频处理软件，集成于 Adobe Creative Cloud
 - **iZotope RX**：业界领先的音频修复软件
-- **Premiere Pro音频效果**：基本的音频处理工具
+- **Premiere Pro 音频效果**：基本的音频处理工具
 - **DaVinci Resolve Fairlight**：专业音频后期制作工具
-- **免费选择**：Audacity等开源工具
+- **免费选择**：Audacity 等开源工具
 
 ## 基本音频清理流程
 
 ### 1. 噪音评估与分析
 - 使用耳机仔细聆听整个音频
 - 识别和分类不同类型的噪音
-- 找到"纯噪音"样本(无对话或主要声音的部分)
+- 找到"纯噪音"样本 (无对话或主要声音的部分)
 
 ### 2. 噪音消除
-#### 在Adobe Audition中使用噪音消除
+#### 在 Adobe Audition 中使用噪音消除
 1. 选择一段只包含噪音的音频作为样本
 2. 使用"捕捉噪音印记"功能
 3. 选择完整音频，应用噪音消除
 4. 调整消除量，避免"水下"效果
 
-#### 在Premiere Pro中使用降噪
+#### 在 Premiere Pro 中使用降噪
 1. 应用"DeNoiser"效果
 2. 根据需要调整降噪程度
 3. 保持音频自然度，避免过度处理
