@@ -73,3 +73,11 @@ a.VPLink.link.pager-link > span.desc {
   margin-top: 0.8em;
   font-size: 0.9em;
 }
+
+/* Logo样式修复 */
+.VPNavBarTitle .logo {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+  margin-right: 8px;
+}

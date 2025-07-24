@@ -18,6 +18,7 @@ export default defineConfig({
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: '/shumei-logo.webp',
     footer: {
       copyright:
         "Copyright ©  2018-2025 苏州中学树莓社 Digital Media Association of SHS. All Rights Reserved.",
