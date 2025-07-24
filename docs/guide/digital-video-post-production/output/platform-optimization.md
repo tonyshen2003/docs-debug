@@ -119,8 +119,6 @@ prev:
 - **音频编码**：AAC - LC
 - **音频比特率**：320 kbps
 - **采样率**：48 kHz
-</CollapsibleCard>
-
 #### 特殊考虑
 - Vimeo 使用高质量转码，建议上传高比特率视频
 - 支持 ProRes、DNxHR 等专业编解码器上传
@@ -128,6 +126,7 @@ prev:
 - 支持自定义播放器和嵌入选项
 
 [Vimeo 编码指南](https://vimeo.com/help/compression)
+</CollapsibleCard>
 
 
 <CollapsibleCard>
