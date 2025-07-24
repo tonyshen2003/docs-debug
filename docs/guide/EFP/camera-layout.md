@@ -119,4 +119,4 @@ next:
 
 ---
 
-> 机位布置案例可参考 [B站 EFP 机位布置分析](https://www.bilibili.com/video/BV1Ya411u7ET/)
+> 机位布置案例可参考 [B 站 EFP 机位布置分析](https://www.bilibili.com/video/BV1Ya411u7ET/)

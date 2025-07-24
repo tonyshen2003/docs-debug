@@ -65,8 +65,8 @@ next:
 ## 相关文档
 - [视频格式与编码](/guide/digital-video-post-production/basics/video-formats)
 - [项目管理与素材整理](/guide/digital-video-post-production/basics/project-management)
-- [Adobe Premiere Pro教程](/guide/digital-video-post-production/software/premiere-pro)
-- [DaVinci Resolve教程](/guide/digital-video-post-production/software/davinci-resolve)
+- [Adobe Premiere Pro 教程](/guide/digital-video-post-production/software/premiere-pro)
+- [DaVinci Resolve 教程](/guide/digital-video-post-production/software/davinci-resolve)
 
 ---
 

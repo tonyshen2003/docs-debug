@@ -21,7 +21,7 @@ next:
 | 格式 | 扩展名 | 特点 | 适用场景 |
 |------|--------|------|----------|
 | MP4 | .mp4 | 通用性好，兼容性高 | 网络分发，社交媒体 |
-| MOV | .mov | 高质量，适合Mac生态 | 专业制作，苹果设备 |
+| MOV | .mov | 高质量，适合 Mac 生态 | 专业制作，苹果设备 |
 | AVI | .avi | 无损质量，文件较大 | 归档，无损存储 |
 | MKV | .mkv | 支持多种编码，开源 | 高质量存储，多音轨 |
 | WebM | .webm | 开源，文件小 | 网页视频 |
@@ -35,9 +35,9 @@ next:
 | 编码 | 特点 | 适用场景 |
 |------|------|----------|
 | H.264/AVC | 高压缩率，兼容性好 | 网络视频，社交媒体 |
-| H.265/HEVC | 比H.264效率高50% | 4K视频，流媒体 |
+| H.265/HEVC | 比 H.264 效率高 50% | 4K 视频，流媒体 |
 | ProRes | 高质量，低压缩 | 专业制作，中间格式 |
-| DNxHD/HR | 高质量，适合编辑 | 专业制作，Avid系统 |
+| DNxHD/HR | 高质量，适合编辑 | 专业制作，Avid 系统 |
 | AV1 | 开源，高效压缩 | 下一代网络视频 |
 
 ## 分辨率与帧率
@@ -56,8 +56,8 @@ next:
 | 帧率 | 标准 | 应用场景 |
 |-----|------|---------|
 | 24fps | 电影标准 | 电影，纪录片 |
-| 25fps | PAL电视标准 | 欧洲电视广播 |
-| 29.97fps/30fps | NTSC电视标准 | 北美电视广播，网络视频 |
+| 25fps | PAL 电视标准 | 欧洲电视广播 |
+| 29.97fps/30fps | NTSC 电视标准 | 北美电视广播，网络视频 |
 | 50fps/60fps | 高帧率标准 | 体育赛事，动作场景 |
 | 120fps+ | 超高帧率 | 慢动作拍摄，科学分析 |
 
@@ -65,7 +65,7 @@ next:
 
 ### 常见色彩空间
 
-- **Rec.709**: HD视频标准色彩空间
+- **Rec.709**: HD 视频标准色彩空间
 - **Rec.2020**: 4K/8K超高清视频色彩空间
 - **DCI-P3**: 数字电影放映标准色彩空间
 - **sRGB**: 网络和消费级显示器标准色彩空间
@@ -74,10 +74,10 @@ next:
 
 | 位深 | 色阶数量 | 主要用途 |
 |------|---------|---------|
-| 8-bit | 每通道256级 (1670万色) | 常规视频，网络内容 |
-| 10-bit | 每通道1024级 (10亿色) | 专业调色，HDR内容 |
-| 12-bit | 每通道4096级 | 高端电影制作，特效合成 |
-| 16-bit | 每通道65536级 | 特效和合成中间文件 |
+| 8-bit | 每通道 256 级 (1670 万色) | 常规视频，网络内容 |
+| 10-bit | 每通道 1024 级 (10 亿色) | 专业调色，HDR 内容 |
+| 12-bit | 每通道 4096 级 | 高端电影制作，特效合成 |
+| 16-bit | 每通道 65536 级 | 特效和合成中间文件 |
 
 ## 选择合适的格式和编码
 
@@ -85,7 +85,7 @@ next:
 
 编辑时优先考虑高质量、低压缩的格式，以保留最多的图像信息：
 - **推荐格式**: ProRes 422/422 HQ, DNxHD/HR
-- **避免使用**: 高压缩的H.264/H.265长GOP编码
+- **避免使用**: 高压缩的 H.264/H.265 长 GOP 编码
 
 ### 交付成品选择
 
@@ -95,7 +95,7 @@ next:
 |-----|---------|----------|
 | YouTube | H.264 MP4 (1080p) | 8-12 Mbps |
 | Instagram | H.264 MP4 | 3.5-5 Mbps |
-| 广播电视 | 根据台标准 | 通常50+ Mbps |
+| 广播电视 | 根据台标准 | 通常 50+ Mbps |
 | 归档保存 | ProRes, DNxHR | 根据分辨率而定 |
 
 ## 转码与代理工作流
@@ -104,15 +104,15 @@ next:
 
 ### 常见代理设置
 
-- **分辨率**: 原始分辨率的1/2或1/4
-- **编码**: ProRes Proxy或H.264低比特率
+- **分辨率**: 原始分辨率的 1/2 或 1/4
+- **编码**: ProRes Proxy 或 H.264 低比特率
 - **保持原始帧率和长宽比**，确保回链原始素材时不会出现问题
 
 ## 相关文档
 - [后期制作流程概述](/guide/digital-video-post-production/basics/workflow-overview)
 - [项目管理与素材整理](/guide/digital-video-post-production/basics/project-management)
-- [Adobe Premiere Pro教程](/guide/digital-video-post-production/software/premiere-pro)
-- [DaVinci Resolve教程](/guide/digital-video-post-production/software/davinci-resolve)
+- [Adobe Premiere Pro 教程](/guide/digital-video-post-production/software/premiere-pro)
+- [DaVinci Resolve 教程](/guide/digital-video-post-production/software/davinci-resolve)
 
 ---
 
