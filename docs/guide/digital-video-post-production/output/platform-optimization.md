@@ -132,7 +132,7 @@ prev:
 <CollapsibleCard>
 
 
-<template #icon><i class="fab fa-vimeo-v platform-icon"></i></template>
+<template #icon><i class="fab fa-bilibili platform-icon"></i></template>
 <template #title>Bilibili</template>
 
 #### 推荐设置
