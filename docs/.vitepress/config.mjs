@@ -142,18 +142,63 @@ export default defineConfig({
       },
 
       {
-        text: "数字媒体技术 / Digital-Media-Tech ",
+        text: "数字媒体技术 / Digital-Media-Tech",
         collapsed: false,
         items: [
           {
-            text: "前期准备",
+            text: "一、数字媒体底层逻辑",
             collapsed: true,
             items: [
-              { text: "活动策划", link: "/guide/EFP/event-planning/" },
-              { text: "制作需求", link: "/guide/EFP/production-requirements/" },
-              { text: "设备清单", link: "/guide/EFP/equipment-list/" },
-            ],
+              { text: "信号数字化原理", link: "/guide/digital-media-tech/01-principles-of-signal-digitization" },
+              { text: "色彩科学核心", link: "/guide/digital-media-tech/02-core-color-science" },
+              { text: "时间码与同步技术", link: "/guide/digital-media-tech/03-timecode-and-synchronization-technologies" }
+            ]
           },
+          {
+            text: "二、硬件与技术适配",
+            collapsed: true,
+            items: [
+              { text: "存储架构与性能", link: "/guide/digital-media-tech/04-storage-architecture-and-performance" },
+              { text: "显示技术与校色", link: "/guide/digital-media-tech/05-display-technologies-and-calibration" },
+              { text: "采集设备技术解析", link: "/guide/digital-media-tech/06-capture-device-technology-analysis" }
+            ]
+          },
+          {
+            text: "三、编码与流传输技术",
+            collapsed: true,
+            items: [
+              { text: "视频编码算法", link: "/guide/digital-media-tech/07-video-encoding-algorithms" },
+              { text: "容器格式设计", link: "/guide/digital-media-tech/08-container-format-design" },
+              { text: "流媒体传输体系", link: "/guide/digital-media-tech/09-streaming-media-transmission-systems" }
+            ]
+          },
+          {
+            text: "四、交互媒体技术应用",
+            collapsed: true,
+            items: [
+              { text: "互动视频技术", link: "/guide/digital-media-tech/10-interactive-video-technologies" },
+              { text: "AR/VR技术架构", link: "/guide/digital-media-tech/11-ar-vr-technical-architecture" },
+              { text: "虚拟制片技术", link: "/guide/digital-media-tech/12-virtual-production-technologies" }
+            ]
+          },
+          {
+            text: "五、AI融合媒体生产",
+            collapsed: true,
+            items: [
+              { text: "AIGC辅助技术", link: "/guide/digital-media-tech/13-aigc-assistant-technologies" },
+              { text: "修复与增强技术", link: "/guide/digital-media-tech/14-restoration-and-enhancement-technologies" },
+              { text: "虚拟人技术体系", link: "/guide/digital-media-tech/15-virtual-human-technology-systems" }
+            ]
+          },
+          {
+            text: "六、技术标准与安全保障",
+            collapsed: true,
+            items: [
+              { text: "行业技术规范", link: "/guide/digital-media-tech/16-industry-technical-standards" },
+              { text: "版权与加密技术", link: "/guide/digital-media-tech/17-copyright-and-encryption-technologies" },
+              { text: "容灾与备份方案", link: "/guide/digital-media-tech/18-disaster-recovery-and-backup-solutions" }
+            ]
+          }
         ],
       },
 
