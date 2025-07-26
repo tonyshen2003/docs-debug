@@ -3,6 +3,7 @@ import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme-without-fonts'
 import CollapsibleCard from '../components/CollapsibleCard.vue'
 import FontSwitcher from '../components/FontSwitcher.vue'
+import Card from '../components/Card.vue'
 import './style.css'
 
 import { NolebaseInlineLinkPreviewPlugin } from '@nolebase/vitepress-plugin-inline-link-preview/client'
@@ -32,6 +33,7 @@ export default {
     app.use(NolebaseInlineLinkPreviewPlugin)
     app.component('CollapsibleCard', CollapsibleCard)
     app.component('FontSwitcher', FontSwitcher)
+    app.component('Card', Card)
     app.component('FontAwesomeIcon', FontAwesomeIcon) // 添加这行
   }
 }

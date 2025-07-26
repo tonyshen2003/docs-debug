@@ -27,6 +27,9 @@ export default defineConfig({
     nav: [
       // 顶部菜单
       { text: "Home", link: "/" },
+      { text: "技术文档", link: "/guide/" },
+      { text: "社团文库", link: "/club-library/" },
+
       { text: "O.S.", link: "https://szzxshumei.com/" },
       { text: "WebDrive", link: "https://webdrive.szzxshumei.com/" },
       { text: "云协作", link: "https://hcn3kru1zxon.feishu.cn/drive/home/" },
@@ -34,29 +37,29 @@ export default defineConfig({
         { component: "FontSwitcher" },
       ],
 
-    sidebar: [
-      // 文档库侧边栏
-      {
-        text: "多机位制作 / EFP",
+    sidebar: {
+      // 技术文档侧边栏
+      '/guide/': [
+        {text: "多机位制作 / EFP",
         collapsed: false,
         items: [
           {
             text: "前期准备",
             collapsed: true,
             items: [
-              { text: "活动策划", link: "/guide/EFP/event-planning/" },
+              { text: "多机位制作策划与准备", link: "/guide/EFP/event-planning/" },
               { text: "岗位分工", link: "/guide/EFP/production-requirements/" },
-              { text: "设备清单", link: "/guide/EFP/equipment-list/" },
+              { text: "多机位制作设备清单", link: "/guide/EFP/equipment-list/" },
             ],
           },
           {
             text: "现场制作",
             collapsed: true,
             items: [
-              { text: "系统搭建", link: "/guide/EFP/system-setup/" },
+              { text: "现场系统搭建", link: "/guide/EFP/system-setup/" },
               { text: "摄影摄像", link: "/guide/EFP/Photography/" },
               { text: "机位设计", link: "/guide/EFP/camera-layout/" },
-              { text: "导播切换", link: "/guide/EFP/live-switching/" },
+              { text: "导播切换技术指南", link: "/guide/EFP/live-switching/" },
               { text: "收声方案", link: "/guide/EFP/audio-capture-plan/" },
             ],
           },
@@ -215,7 +218,21 @@ export default defineConfig({
           { text: "Runtime API Examples", link: "/guide/api-examples" },
         ],
       },*/
-    ],
+      ],
+
+      // 社团文库侧边栏
+      '/club-library/': [
+        {
+          text: "社团文库",
+          collapsed: false,
+          items: [
+            { text: "总览", link: "/club-library/" },
+            { text: "社团发展历史", link: "/club-library/history" },
+            { text: "活动档案", link: "/club-library/activities" },
+          ],
+        },
+      ],
+     },
 
     socialLinks: [
       {
