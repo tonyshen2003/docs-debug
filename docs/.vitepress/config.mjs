@@ -29,11 +29,9 @@ export default defineConfig({
       { text: "Home", link: "/" },
       { text: "技术文档", link: "/guide/" },
       { text: "社团文库", link: "/club-library/" },
-
       { text: "O.S.", link: "https://szzxshumei.com/" },
       { text: "WebDrive", link: "https://webdrive.szzxshumei.com/" },
       { text: "云协作", link: "https://hcn3kru1zxon.feishu.cn/drive/home/" },
-        { text: "MY 树莓", link: "https://szzxshumei.com/" },
         { component: "FontSwitcher" },
       ],
 
@@ -227,8 +225,6 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: "总览", link: "/club-library/" },
-            { text: "社团发展历史", link: "/club-library/history" },
-            { text: "活动档案", link: "/club-library/activities" },
           ],
         },
       ],
