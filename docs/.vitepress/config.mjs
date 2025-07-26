@@ -30,8 +30,9 @@ export default defineConfig({
       { text: "O.S.", link: "https://szzxshumei.com/" },
       { text: "WebDrive", link: "https://webdrive.szzxshumei.com/" },
       { text: "云协作", link: "https://hcn3kru1zxon.feishu.cn/drive/home/" },
-      { text: "MY 树莓", link: "https://szzxshumei.com/" },
-    ],
+        { text: "MY 树莓", link: "https://szzxshumei.com/" },
+        { component: "FontSwitcher" },
+      ],
 
     sidebar: [
       // 文档库侧边栏
@@ -237,6 +238,14 @@ export default defineConfig({
     search: {
       provider: "local",
     },
+    
+    // 自定义右侧大纲标题
+    outline: {
+      label: '本页目录'
+    },
+    
+    // 自定义移动端菜单按钮文本
+    sidebarMenuLabel: '目录',
   },
 
   /*
@@ -301,6 +310,10 @@ export default defineConfig({
   },
   
   vite: { 
+    server: {
+      host: '0.0.0.0', // 允许局域网访问
+      port: 5173
+    },
     optimizeDeps: { 
       exclude: [ 
         '@nolebase/vitepress-plugin-inline-link-preview/client',
@@ -313,7 +326,7 @@ export default defineConfig({
         '@nolebase/*'
       ], 
     }, 
-  },
+  }
 });
 
 const customElements = [

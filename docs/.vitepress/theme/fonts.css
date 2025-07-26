@@ -1,5 +1,14 @@
 @charset "UTF-8"; /* .vitepress/theme/my-fonts.css */
 
+/* 宋体字体定义 */
+@font-face {
+  font-family: "Noto Serif SC";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Noto Serif CJK SC"), local("SimSun"), local("宋体");
+  font-display: swap;
+}
+
 @font-face {
   font-family: "DFPHanziPen-GBW5";
   font-style: normal;
