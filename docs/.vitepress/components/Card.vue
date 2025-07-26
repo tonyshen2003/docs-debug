@@ -47,9 +47,8 @@ export default {
   },
   methods: {
     handleClick() {
-      if (this.link) {
-        window.open(this.link, '_blank')
-      }
+      // VitePress会自动处理内部链接的路由导航
+      // 无需手动干预，让浏览器使用默认的链接行为
     }
   }
 }
