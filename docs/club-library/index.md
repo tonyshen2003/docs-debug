@@ -30,16 +30,12 @@ layout: doc
   title="社团历史" 
   description="七届组委会发展历程、重要事件记录，时间跨度：2018年至今"
   icon="📚"
-  link="/club-library/history"
-  linkText="查看历史"
 />
 
 <Card 
   title="活动档案" 
   description="重要活动、作品、获奖记录等珍贵资料，持续更新中"
   icon="🏆"
-  link="/club-library/activities"
-  linkText="浏览档案"
 />
 
 <Card 
