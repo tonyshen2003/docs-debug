@@ -15,7 +15,7 @@ import { ref, onMounted, watch } from 'vue'
 
 const currentFont = ref('songti')
 
-// 从localStorage读取字体设置
+// 从 localStorage 读取字体设置
 onMounted(() => {
   const savedFont = localStorage.getItem('vitepress-font-family')
   if (savedFont) {
