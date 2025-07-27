@@ -79,15 +79,29 @@ next:
 
 #### 🔰 基础配置（2-3 机位）
 
-<div class="language-text vp-adaptive-theme">
-<div class="title">机位布局示意</div>
-<pre><code>     观众席
-  A 机 ← → B 机
-      ↑
-    C 机 (主)
-   (舞台/讲台)
-</code></pre>
-</div>
+**🎬 机位布局示意图**
+
+```mermaid
+flowchart TD
+    A["🪑 观众席 🪑"] 
+    B["📹 A机<br/>(左侧45°)"]
+    C["📹 B机<br/>(右侧45°)"]
+    D["📹 C机<br/>(主机位)"]
+    E["🎭 舞台/讲台"]
+    
+    A -.-> B
+    A -.-> C
+    A -.-> D
+    B --> E
+    C --> E
+    D --> E
+    
+    style A fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    style B fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    style C fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    style D fill:#e8f5e8,stroke:#1b5e20,stroke-width:3px
+    style E fill:#fff3e0,stroke:#e65100,stroke-width:2px
+```
 
 | 机位 | 位置 | 主要功能 | 镜头类型 |
 |------|------|----------|----------|
@@ -1547,3 +1561,11 @@ AI剪辑助手:
 - 分阶段完成，避免一次性处理
 - 建立标准化的剪辑模板
 - 培养高效的工作习惯
+
+:::
+
+---
+
+> 📝 **文档说明**：本指南涵盖了多机位EFP制作的完整流程，从前期规划到后期制作的各个环节。建议根据实际项目需求和团队能力，灵活调整和应用相关内容。
+> 
+> 🔄 **持续更新**：随着技术发展和实践经验积累，本文档将持续更新优化，欢迎提供宝贵意见和建议。
