@@ -1,0 +1,769 @@
+/* 飞书设计规范响应式系统 */
+/* 基于飞书开放平台响应式设计指南 */
+
+/* CSS 变量定义 - 飞书设计规范 */
+:root {
+  /* 基础单元 */
+  --grid-base-unit: 8px;
+  
+  /* 栅格系统 */
+  --grid-columns-desktop: 12;
+  --grid-columns-tablet: 8;
+  --grid-columns-mobile: 4;
+  
+  /* 槽宽度 */
+  --gutter-desktop: 16px;
+  --gutter-tablet: 8px;
+  --gutter-mobile: 16px;
+  
+  /* 安全边距 */
+  --margin-desktop: 24px;
+  --margin-tablet: 16px;
+  --margin-mobile: 16px;
+  
+  /* 断点定义 */
+  --breakpoint-mobile: 480px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1024px;
+  --breakpoint-large: 1440px;
+  
+  /* 飞书设计规范间距系统 */
+  --spacing-xs: calc(var(--grid-base-unit) * 0.5); /* 4px */
+  --spacing-sm: var(--grid-base-unit);              /* 8px */
+  --spacing-md: calc(var(--grid-base-unit) * 2);    /* 16px */
+  --spacing-lg: calc(var(--grid-base-unit) * 3);    /* 24px */
+  --spacing-xl: calc(var(--grid-base-unit) * 4);    /* 32px */
+  --spacing-2xl: calc(var(--grid-base-unit) * 6);   /* 48px */
+  --spacing-3xl: calc(var(--grid-base-unit) * 8);   /* 64px */
+  
+  /* 圆角系统 */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 50%;
+  
+  /* 阴影系统 */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  
+  /* 动画系统 */
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 350ms;
+  --easing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 基础容器系统 - 飞书栅格规范 */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: var(--margin-desktop);
+  padding-right: var(--margin-desktop);
+  box-sizing: border-box;
+}
+
+/* 栅格系统 - 飞书设计规范 */
+.grid {
+  display: grid;
+  gap: var(--gutter-desktop);
+  width: 100%;
+}
+
+/* Web 端/桌面端 - 12 列栅格 */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    padding-left: var(--margin-desktop);
+    padding-right: var(--margin-desktop);
+  }
+  
+  .grid {
+    grid-template-columns: repeat(var(--grid-columns-desktop), 1fr);
+    gap: var(--gutter-desktop);
+  }
+  
+  /* 12 列栅格的等分方式 */
+  .col-1 { grid-column: span 1; }
+  .col-2 { grid-column: span 2; }
+  .col-3 { grid-column: span 3; }
+  .col-4 { grid-column: span 4; }
+  .col-6 { grid-column: span 6; }
+  .col-12 { grid-column: span 12; }
+  
+  /* 文档内容区域 */
+  .vp-doc {
+    padding: var(--spacing-xl) var(--spacing-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* 标题层级 - 飞书设计规范 */
+  .vp-doc h1 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin: var(--spacing-2xl) 0 var(--spacing-lg);
+    letter-spacing: -0.02em;
+  }
+  
+  .vp-doc h2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: var(--spacing-xl) 0 var(--spacing-md);
+    letter-spacing: -0.01em;
+  }
+  
+  .vp-doc h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.35;
+    margin: var(--spacing-lg) 0 var(--spacing-md);
+  }
+  
+  .vp-doc h4 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: var(--spacing-lg) 0 var(--spacing-sm);
+  }
+  
+  /* 段落间距 */
+  .vp-doc p {
+    margin: var(--spacing-md) 0;
+    line-height: 1.7;
+    font-size: 16px;
+  }
+}
+
+/* Pad 端 - 8 列栅格 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    padding-left: var(--margin-tablet);
+    padding-right: var(--margin-tablet);
+  }
+  
+  .grid {
+    grid-template-columns: repeat(var(--grid-columns-tablet), 1fr);
+    gap: var(--gutter-tablet);
+  }
+  
+  /* 8 列栅格的等分方式 */
+  .col-1 { grid-column: span 1; }
+  .col-2 { grid-column: span 2; }
+  .col-4 { grid-column: span 4; }
+  .col-8 { grid-column: span 8; }
+  
+  /* 文档内容区域 */
+  .vp-doc {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+  
+  /* 标题层级调整 */
+  .vp-doc h1 {
+    font-size: 28px;
+    margin: var(--spacing-xl) 0 var(--spacing-md);
+  }
+  
+  .vp-doc h2 {
+    font-size: 24px;
+    margin: var(--spacing-lg) 0 var(--spacing-md);
+  }
+  
+  .vp-doc h3 {
+    font-size: 20px;
+    margin: var(--spacing-md) 0 var(--spacing-sm);
+  }
+  
+  .vp-doc p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
+
+/* 移动端 - 4 列栅格 */
+@media (max-width: 767px) {
+  .container {
+    padding-left: var(--margin-mobile);
+    padding-right: var(--margin-mobile);
+  }
+  
+  .grid {
+    grid-template-columns: repeat(var(--grid-columns-mobile), 1fr);
+    gap: var(--gutter-mobile);
+  }
+  
+  /* 4 列栅格的等分方式 */
+  .col-1 { grid-column: span 1; }
+  .col-2 { grid-column: span 2; }
+  .col-4 { grid-column: span 4; }
+  
+  /* 文档内容区域 */
+  .vp-doc {
+    padding: var(--spacing-md);
+  }
+  
+  /* 标题层级调整 */
+  .vp-doc h1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: var(--spacing-lg) 0 var(--spacing-md);
+  }
+  
+  .vp-doc h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: var(--spacing-md) 0 var(--spacing-sm);
+  }
+  
+  .vp-doc h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: var(--spacing-md) 0 var(--spacing-sm);
+  }
+  
+  .vp-doc h4 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: var(--spacing-sm) 0 var(--spacing-xs);
+  }
+  
+  /* 段落间距 */
+  .vp-doc p {
+    margin: var(--spacing-sm) 0;
+    line-height: 1.6;
+    font-size: 14px;
+  }
+}
+
+/* 表格响应式设计 - 飞书设计规范优化版 */
+.vp-doc table {
+  /* 设置表格宽度为 100% */
+  width: 100%;
+  /* 设置表格边框合并 */
+  border-collapse: separate;
+  /* 设置表格边框间距为 0 */
+  border-spacing: 0;
+  /* 设置表格边框为 1px，颜色为--vp-c-border */
+  border: 1px solid var(--vp-c-border);
+  /* 设置表格边框圆角为--radius-lg */
+  border-radius: var(--radius-lg);
+  /* 设置表格溢出隐藏 */
+  overflow: hidden;
+  /* 设置表格阴影为--shadow-sm */
+  box-shadow: var(--shadow-sm);
+  /* 设置表格上下外边距为--spacing-lg */
+  margin: var(--spacing-lg) 0;
+  /* 设置表格背景颜色为--vp-c-bg */
+  background-color: var(--vp-c-bg);
+  /* 设置表格字体变体为 tabular-nums */
+  font-variant-numeric: tabular-nums;
+  /* 设置表格过渡效果为--easing，持续时间为--duration-normal */
+  transition: var(--easing) var(--duration-normal);
+}
+
+/* 当鼠标悬停在.vp-doc表格上时，添加阴影和向上移动1px的动画效果 */
+.vp-doc table:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+/* 设置.vp-doc表格的表头和单元格的样式 */
+.vp-doc table th,
+.vp-doc table td {
+  /* 设置内边距 */
+  padding: var(--spacing-md) var(--spacing-lg);
+  /* 设置文本对齐方式 */
+  text-align: left;
+  /* 设置底部边框样式 */
+  border-bottom: 1px solid var(--vp-c-divider-light);
+  /* 设置垂直对齐方式 */
+  vertical-align: middle;
+  /* 设置背景颜色过渡效果 */
+  transition: background-color var(--duration-fast) var(--easing);
+}
+
+/* 表格头部样式 */
+.vp-doc table th {
+  /* 背景颜色 */
+  background-color: var(--vp-c-bg-soft);
+  /* 字体加粗 */
+  font-weight: 600;
+  /* 字体大小 */
+  font-size: 14px;
+  /* 字体颜色 */
+  color: var(--vp-c-text-1);
+  /* 固定在顶部 */
+  position: sticky;
+  top: 0;
+  /* z-index */
+  z-index: 10;
+  /* 底部边框 */
+  border-bottom: 2px solid var(--vp-c-divider);
+}
+
+/* 表格单元格样式 */
+.vp-doc table td {
+  /* 字体大小 */
+  font-size: 14px;
+  /* 字体颜色 */
+  color: var(--vp-c-text-1);
+}
+
+/* 表格行样式 */
+.vp-doc table tbody tr {
+  /* 背景颜色过渡效果 */
+  transition: background-color var(--duration-fast) var(--easing);
+}
+
+/* 鼠标悬停行样式 */
+.vp-doc table tbody tr:hover {
+  /* 背景颜色 */
+  background-color: var(--vp-c-bg-soft);
+}
+
+/* 偶数行样式 */
+.vp-doc table tbody tr:nth-child(even) {
+  /* 背景颜色 */
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* 表格行样式 - 鼠标悬停时背景颜色 */
+.vp-doc table tbody tr:nth-child(even):hover {
+  background-color: var(--vp-c-bg-soft);
+}
+
+/* 表格最后一行样式 - 底部边框为空 */
+.vp-doc table tr:last-child td {
+  border-bottom: none;
+}
+
+/* 表格数据类型样式 - ArcoDesign 规范 */
+/* 数字类型样式 - 文本右对齐，字体变体为等宽数字，字体加粗 */
+.vp-doc table .table-number {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+}
+
+/* 货币类型样式 - 文本右对齐，字体变体为等宽数字，字体加粗，颜色为品牌色 */
+.vp-doc table .table-currency {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--vp-c-brand-1);
+}
+
+.vp-doc table .table-status {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  min-width: 60px;
+  justify-content: center;
+}
+
+.vp-doc table .table-status.success {
+  background: rgba(34, 197, 94, 0.1);
+  color: #059669;
+  border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.vp-doc table .table-status.warning {
+  background: rgba(245, 158, 11, 0.1);
+  color: #d97706;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.vp-doc table .table-status.error {
+  background: rgba(239, 68, 68, 0.1);
+  color: #dc2626;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.vp-doc table .table-status.info {
+  background: rgba(59, 130, 246, 0.1);
+  color: #2563eb;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+/* 空数据处理 */
+.vp-doc table td:empty::before {
+  content: "-";
+  color: var(--vp-c-text-3);
+  font-style: italic;
+}
+
+/* 桌面端表格 */
+@media (min-width: 1024px) {
+  .vp-doc table {
+    font-size: 15px;
+  }
+  
+  .vp-doc table th,
+  .vp-doc table td {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+}
+
+/* 平板端表格 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .vp-doc table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .vp-doc table th,
+  .vp-doc table td {
+    min-width: 120px;
+    padding: var(--spacing-md);
+  }
+}
+
+/* 移动端表格 - 使用桌面端样式 */
+@media (max-width: 767px) {
+  /* 移动端表格保持桌面端的标准布局 */
+  .vp-doc table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 14px;
+  }
+  
+  .vp-doc table th,
+  .vp-doc table td {
+    padding: var(--spacing-sm) var(--spacing-md);
+    min-width: 100px;
+  }
+  
+  /* 表格滚动条样式 */
+  .vp-doc table::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .vp-doc table::-webkit-scrollbar-track {
+    background: var(--vp-c-bg-soft);
+    border-radius: 4px;
+  }
+  
+  .vp-doc table::-webkit-scrollbar-thumb {
+    background: var(--vp-c-brand-1);
+    border-radius: 4px;
+  }
+  
+  .vp-doc table::-webkit-scrollbar-thumb:hover {
+    background: var(--vp-c-brand-2);
+  }
+}
+
+/* 图表响应式设计 - 飞书设计规范 */
+.mermaid {
+  margin: var(--spacing-lg) 0;
+  padding: var(--spacing-lg);
+  background: linear-gradient(135deg, var(--vp-c-bg-soft) 0%, var(--vp-c-bg-alt) 100%);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--vp-c-border);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-normal);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mermaid:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+  font-family: var(--vp-font-family-base), 'Noto Sans SC', sans-serif;
+}
+
+/* 桌面端图表 */
+@media (min-width: 1024px) {
+  .mermaid {
+    padding: var(--spacing-xl);
+  }
+  
+  .mermaid svg {
+    min-width: 600px;
+  }
+}
+
+/* 平板端图表 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mermaid {
+    margin: var(--spacing-lg) calc(-1 * var(--margin-tablet));
+    padding: var(--spacing-lg) var(--margin-tablet);
+  }
+  
+  .mermaid svg {
+    min-width: 500px;
+  }
+}
+
+/* 移动端图表 */
+@media (max-width: 767px) {
+  .mermaid {
+    margin: var(--spacing-md) calc(-1 * var(--margin-mobile));
+    padding: var(--spacing-md);
+    border-radius: var(--radius-lg);
+  }
+  
+  .mermaid svg {
+    min-width: 400px;
+  }
+  
+  .mermaid::after {
+    content: "💡 左右滑动查看完整图表";
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    color: var(--vp-c-text-2);
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-sm);
+    background: var(--vp-c-bg);
+    border: 1px solid var(--vp-c-divider-light);
+    border-radius: var(--radius-md);
+    font-weight: 500;
+  }
+}
+
+/* 代码块响应式设计 - 飞书设计规范 */
+.vp-doc div[class*="language-"] {
+  margin: var(--spacing-lg) 0;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--vp-c-border);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.vp-doc div[class*="language-"] pre {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: var(--spacing-md) var(--spacing-lg);
+  margin: 0;
+  background-color: var(--vp-c-bg-alt);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* 移动端代码块 */
+@media (max-width: 767px) {
+  .vp-doc div[class*="language-"] {
+    margin: var(--spacing-md) calc(-1 * var(--margin-mobile));
+    border-radius: var(--radius-md);
+  }
+  
+  .vp-doc div[class*="language-"] pre {
+    padding: var(--spacing-md);
+    font-size: 13px;
+  }
+}
+
+/* 卡片组件响应式设计 - 飞书设计规范 */
+.card {
+  background-color: var(--vp-c-bg);
+  border: 1px solid var(--vp-c-border);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+  margin-bottom: var(--spacing-lg);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.card .title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+  color: var(--vp-c-text-1);
+}
+
+.card .description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--vp-c-text-2);
+}
+
+/* 移动端卡片 */
+@media (max-width: 767px) {
+  .card {
+    padding: var(--spacing-md);
+    border-radius: var(--radius-lg);
+  }
+  
+  .card .title {
+    font-size: 16px;
+  }
+  
+  .card .description {
+    font-size: 14px;
+  }
+}
+
+/* 导航响应式设计 - 飞书设计规范 */
+.VPNavBar {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--vp-c-divider-light);
+  transition: var(--transition-normal);
+}
+
+/* 桌面端导航 */
+@media (min-width: 1024px) {
+  .VPNavBar {
+    padding: 0 var(--margin-desktop);
+  }
+}
+
+/* 平板端导航 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .VPNavBar {
+    padding: 0 var(--margin-tablet);
+  }
+}
+
+/* 移动端导航 */
+@media (max-width: 767px) {
+  .VPNavBar {
+    padding: 0 var(--margin-mobile);
+  }
+}
+
+/* 侧边栏响应式设计 - 飞书设计规范 */
+.VPSidebar {
+  background-color: var(--vp-c-bg-soft);
+  border-right: 1px solid var(--vp-c-divider-light);
+}
+
+/* 移动端侧边栏 */
+@media (max-width: 767px) {
+  .VPSidebar {
+    padding: var(--spacing-lg);
+  }
+}
+
+/* 列表响应式设计 - 飞书设计规范 */
+.vp-doc ul,
+.vp-doc ol {
+  margin: var(--spacing-md) 0;
+  padding-left: var(--spacing-lg);
+}
+
+.vp-doc li {
+  margin: var(--spacing-xs) 0;
+  line-height: 1.6;
+}
+
+/* 引用块响应式设计 - 飞书设计规范 */
+.vp-doc blockquote {
+  margin: var(--spacing-lg) 0;
+  padding: var(--spacing-md) var(--spacing-lg);
+  background-color: var(--vp-c-bg-soft);
+  border-left: 4px solid var(--vp-c-brand);
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+  box-shadow: var(--shadow-xs);
+}
+
+.vp-doc blockquote p {
+  margin: 0;
+  color: var(--vp-c-text-1);
+  font-style: normal;
+}
+
+/* 移动端引用块 */
+@media (max-width: 767px) {
+  .vp-doc blockquote {
+    margin: var(--spacing-md) calc(-1 * var(--spacing-xs));
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  }
+}
+
+/* 安全区域适配 - iPhone X+ 等设备 */
+@supports (padding: max(0px)) {
+  @media (max-width: 767px) {
+    .container {
+      padding-left: max(var(--margin-mobile), env(safe-area-inset-left));
+      padding-right: max(var(--margin-mobile), env(safe-area-inset-right));
+    }
+    
+    .VPNavBar {
+      padding-left: max(var(--margin-mobile), env(safe-area-inset-left));
+      padding-right: max(var(--margin-mobile), env(safe-area-inset-right));
+    }
+    
+    .VPContent {
+      padding-bottom: max(var(--spacing-3xl), env(safe-area-inset-bottom));
+    }
+  }
+}
+
+
+
+/* 打印样式优化 */
+@media print {
+  .VPNavBar,
+  .VPSidebar,
+  .mobile-bottom-nav,
+  .quick-menu {
+    display: none !important;
+  }
+  
+  .vp-doc {
+    padding: 0;
+    max-width: none;
+  }
+  
+  .vp-doc table {
+    break-inside: avoid;
+  }
+  
+  .mermaid {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #000;
+  }
+}
+
+/* 性能优化 */
+.mermaid,
+.card,
+.vp-doc table {
+  contain: layout style paint;
+  will-change: transform;
+}
+
+/* 滚动条样式优化 - 飞书风格 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vp-c-bg-soft);
+  border-radius: var(--radius-sm);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-text-3);
+  border-radius: var(--radius-sm);
+  transition: var(--transition-fast);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-text-2);
+}

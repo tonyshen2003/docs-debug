@@ -78,46 +78,49 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-/* 移动端底部导航 - 符合飞书设计规范 */
+/* 移动端底部导航 - 飞书设计规范 */
 .mobile-bottom-nav {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  background: var(--vp-c-bg);
-  border-top: 1px solid var(--vp-c-divider);
+  background: rgba(255, 255, 255, 0.95);
+  border-top: 1px solid var(--vp-c-divider-light);
   display: flex;
   justify-content: space-around;
-  padding: 8px 16px 12px 16px; /* 增加左右边距，符合全局边距规范 */
+  align-items: center;
+  padding: var(--spacing-sm, 8px) var(--margin-mobile, 16px);
   z-index: 1000;
-  min-height: 64px; /* 符合移动端最小触控区域 */
-  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.04); /* 添加轻微阴影提升层次感 */
-  backdrop-filter: blur(8px); /* 毛玻璃效果，符合现代设计趋势 */
+  height: 68px; /* 飞书推荐的底部导航高度 */
+  box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.08); /* 飞书风格的阴影 */
+  backdrop-filter: blur(20px); /* 飞书风格的毛玻璃效果 */
+  -webkit-backdrop-filter: blur(20px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* 飞书风格的缓动 */
 }
 
+/* 导航项 - 飞书风格 */
 .nav-item {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   color: var(--vp-c-text-2);
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); /* 使用飞书推荐的缓动函数 */
-  padding: 8px 12px;
-  border-radius: 8px; /* 增加圆角，符合飞书设计语言 */
-  min-width: 48px; /* 确保最小触控区域 */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* 飞书风格的缓动函数 */
+  padding: var(--spacing-xs, 6px) var(--spacing-sm, 12px);
+  border-radius: var(--radius-lg, 12px); /* 飞书风格的圆角 */
+  min-height: 44px; /* 飞书推荐的最小触控区域 */
+  cursor: pointer;
+  background-color: transparent;
   position: relative;
 }
 
+.nav-item:hover,
 .nav-item.active {
   color: var(--vp-c-brand);
-  background: var(--vp-c-brand-soft); /* 激活状态背景 */
-}
-
-.nav-item:hover {
-  color: var(--vp-c-brand);
-  background: var(--vp-c-gray-soft); /* 悬停状态背景 */
-  transform: translateY(-1px); /* 轻微上移效果 */
+  background-color: var(--vp-c-brand-soft); /* 飞书风格的激活背景 */
+  transform: translateY(-1px); /* 微妙的悬浮效果 */
 }
 
 .nav-item:active {
@@ -159,19 +162,18 @@ onUnmounted(() => {
   font-weight: 600; /* 激活状态字重更粗 */
 }
 
-/* 暗色模式优化 */
-@media (prefers-color-scheme: dark) {
-  .mobile-bottom-nav {
-    background: rgba(var(--vp-c-bg-rgb), 0.8);
-    border-top-color: var(--vp-c-divider-light);
-    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
-  }
+/* 暗色模式下的底部导航 */
+.dark .mobile-bottom-nav {
+  background-color: rgba(26, 26, 26, 0.95);
+  border-top-color: var(--vp-c-divider);
+  box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* 适配安全区域 */
-@supports (padding-bottom: env(safe-area-inset-bottom)) {
+/* 底部安全区域适配（iPhone X+） - 飞书风格 */
+@supports (padding: max(0px)) {
   .mobile-bottom-nav {
-    padding-bottom: calc(12px + env(safe-area-inset-bottom));
+    padding-bottom: max(var(--spacing-sm, 8px), env(safe-area-inset-bottom));
+    height: calc(68px + max(var(--spacing-sm, 8px), env(safe-area-inset-bottom)));
   }
 }
 

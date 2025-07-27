@@ -5,6 +5,8 @@ import CollapsibleCard from '../components/CollapsibleCard.vue'
 import FontSwitcher from '../components/FontSwitcher.vue'
 import Card from '../components/Card.vue'
 import MobileBottomNav from '../components/MobileBottomNav.vue'
+import ResponsiveGrid from '../components/ResponsiveGrid.vue'
+import ResponsiveContainer from '../components/ResponsiveContainer.vue'
 import './style.css'
 
 import { NolebaseInlineLinkPreviewPlugin } from '@nolebase/vitepress-plugin-inline-link-preview/client'
@@ -18,6 +20,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import './fonts.css'
 import './customize.css'
 import './mobile.css'
+import './responsive.css'
 
 // 添加图标到库
 library.add(faTiktok, faVimeoV, faBilibili)
@@ -38,6 +41,8 @@ export default {
     app.component('FontSwitcher', FontSwitcher)
     app.component('Card', Card)
     app.component('MobileBottomNav', MobileBottomNav)
+    app.component('ResponsiveGrid', ResponsiveGrid)
+    app.component('ResponsiveContainer', ResponsiveContainer)
     app.component('FontAwesomeIcon', FontAwesomeIcon) // 添加这行
   }
 }

@@ -44,6 +44,9 @@
  * -------------------------------------------------------------------------- */
 
 :root {
+  /* 注意：飞书设计规范变量已移至 responsive.css 统一管理 */
+  
+  /* VitePress 默认颜色变量 */
   --vp-c-default-1: var(--vp-c-gray-1);
   --vp-c-default-2: var(--vp-c-gray-2);
   --vp-c-default-3: var(--vp-c-gray-3);
@@ -135,5 +138,62 @@
 
 .DocSearch {
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
+}
+
+/**
+ * 飞书设计规范 - 全局响应式基础样式
+ * -------------------------------------------------------------------------- */
+
+/* 全局盒模型 */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 响应式图片 */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 注意：表格样式已移至 responsive.css 和 mobile.css 统一管理 */
+
+/* 响应式代码块 */
+pre {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+/* 注意：滚动条样式已移至 responsive.css 统一管理 */
+
+
+
+/* 安全区域适配 */
+@supports (padding: max(0px)) {
+  .VPContent {
+    padding-left: max(var(--margin-mobile), env(safe-area-inset-left));
+    padding-right: max(var(--margin-mobile), env(safe-area-inset-right));
+  }
+}
+
+
+
+/* 打印样式优化 */
+@media print {
+  .mobile-bottom-nav,
+  .VPNav,
+  .VPSidebar {
+    display: none !important;
+  }
+  
+  .VPContent {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  * {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+  }
 }
 
