@@ -37,7 +37,7 @@ Premiere Pro 的界面分为几个主要区域：
 | **工具面板** | 包含剪辑、修剪等编辑工具 |
 | **效果控件** | 调整应用到剪辑的效果参数 |
 
-![Premiere Pro 界面](https://helpx.adobe.com/content/dam/help/en/premiere-pro/using/whats-new/jcr_content/main-pars/image_1713549693/Pr_2020_Workspace.jpg.img.jpg)
+<!-- Premiere Pro 界面图片已移除，避免外部链接加载错误 -->
 
 ## 基本操作流程
 
