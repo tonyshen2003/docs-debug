@@ -4,6 +4,7 @@ import DefaultTheme from 'vitepress/theme-without-fonts'
 import CollapsibleCard from '../components/CollapsibleCard.vue'
 import FontSwitcher from '../components/FontSwitcher.vue'
 import Card from '../components/Card.vue'
+import MobileBottomNav from '../components/MobileBottomNav.vue'
 import './style.css'
 
 import { NolebaseInlineLinkPreviewPlugin } from '@nolebase/vitepress-plugin-inline-link-preview/client'
@@ -16,6 +17,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import './fonts.css'
 import './customize.css'
+import './mobile.css'
 
 // 添加图标到库
 library.add(faTiktok, faVimeoV, faBilibili)
@@ -26,6 +28,7 @@ export default {
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
+      'layout-bottom': () => h(MobileBottomNav)
     })
   },
   enhanceApp({ app, router, siteData }) {
@@ -34,6 +37,7 @@ export default {
     app.component('CollapsibleCard', CollapsibleCard)
     app.component('FontSwitcher', FontSwitcher)
     app.component('Card', Card)
+    app.component('MobileBottomNav', MobileBottomNav)
     app.component('FontAwesomeIcon', FontAwesomeIcon) // 添加这行
   }
 }

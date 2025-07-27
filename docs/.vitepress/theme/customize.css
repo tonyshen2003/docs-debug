@@ -81,3 +81,29 @@ a.VPLink.link.pager-link > span.desc {
   object-fit: contain;
   margin-right: 8px;
 }
+
+/* Mermaid 图表居中样式 */
+.mermaid {
+  text-align: center;
+  margin: 1.5em auto;
+  display: block;
+}
+
+/* Mermaid 图表容器居中 */
+.vp-doc .mermaid,
+.content .mermaid,
+div[data-type="mermaid"] {
+  text-align: center;
+  margin: 1.5em auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mermaid SVG 元素居中 */
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
