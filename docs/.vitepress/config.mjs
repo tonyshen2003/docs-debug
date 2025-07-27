@@ -1,5 +1,5 @@
 import { defineConfig } from "vitepress";
-import markdownItKatex from 'markdown-it-katex'
+import { katex } from '@mdit/plugin-katex'
 import { InlineLinkPreviewElementTransform } from '@nolebase/vitepress-plugin-inline-link-preview/markdown-it'
 import footnote from 'markdown-it-footnote'
 import { withMermaid } from 'vitepress-plugin-mermaid'
@@ -287,6 +287,7 @@ export default withMermaid(defineConfig({
   head: [
     ["link", { rel: "icon", href: "/shumei-logo.webp" }],
     ["link", { rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" }],
+    ["link", { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" }],
     ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
     [
       "link",
@@ -307,8 +308,14 @@ export default withMermaid(defineConfig({
 
   markdown: {
     config: (md) => {
-      md.use(markdownItKatex),
-      md.use(InlineLinkPreviewElementTransform),
+      md.use(katex, {
+        strict: false,
+        throwOnError: false,
+        errorColor: '#cc0000',
+        displayMode: false,
+        output: 'html'
+      });
+      md.use(InlineLinkPreviewElementTransform);
       md.use(footnote);
       // Mermaid 由 vitepress-plugin-mermaid 自动处理
     },
