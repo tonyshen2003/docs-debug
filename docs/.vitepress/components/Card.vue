@@ -2,7 +2,8 @@
   <a class="card" :href="link" @click="handleClick">
     <article class="box">
       <div class="card-icon" v-if="icon">
-        <span class="icon-emoji">{{ icon }}</span>
+        <img v-if="icon.startsWith('/')" :src="icon" :alt="title" class="icon-image" />
+        <span v-else class="icon-emoji">{{ icon }}</span>
       </div>
       <h2 class="card-title" v-if="title">{{ title }}</h2>
       <p class="card-description" v-if="description">{{ description }}</p>
@@ -47,7 +48,7 @@ export default {
   },
   methods: {
     handleClick() {
-      // VitePress会自动处理内部链接的路由导航
+      // VitePress 会自动处理内部链接的路由导航
       // 无需手动干预，让浏览器使用默认的链接行为
     }
   }
@@ -93,6 +94,13 @@ export default {
 .icon-emoji {
   font-size: 24px;
   line-height: 1;
+}
+
+.icon-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .card-title {
@@ -154,6 +162,13 @@ export default {
   
   .icon-emoji {
     font-size: 20px;
+  }
+  
+  .icon-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
   }
 }
 </style>
