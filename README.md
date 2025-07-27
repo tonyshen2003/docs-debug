@@ -2,10 +2,6 @@
   <img src="docs/public/images/Shumei_docs_loge.jpg" alt="数媒文档 Logo" width="300">
 </div>
 
-<div align="center">
-  <img src="docs/public/shumei-logo.webp" alt="数媒 Logo" width="200">
-</div>
-
 # 苏州中学树莓社技术文档
 
 > 🎬 专业级数字媒体制作技术知识库 | 从理论到实践的完整学习体系

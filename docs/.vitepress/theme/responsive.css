@@ -103,7 +103,8 @@
     font-size: 32px;
     font-weight: 600;
     line-height: 1.25;
-    margin: var(--spacing-2xl) 0 var(--spacing-lg);
+    /* 设置外边距，上边距为--spacing-2xl，左右边距为 0，下边距为--spacing-lg */
+    margin: 0 0 var(--spacing-lg);
     letter-spacing: -0.02em;
   }
   
@@ -163,7 +164,7 @@
   /* 标题层级调整 */
   .vp-doc h1 {
     font-size: 28px;
-    margin: var(--spacing-xl) 0 var(--spacing-md);
+    margin: 0 0 var(--spacing-md);
   }
   
   .vp-doc h2 {
@@ -209,7 +210,7 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 1.3;
-    margin: var(--spacing-lg) 0 var(--spacing-md);
+    margin: 0 0 var(--spacing-md);
   }
   
   .vp-doc h2 {
@@ -267,13 +268,13 @@
   transition: var(--easing) var(--duration-normal);
 }
 
-/* 当鼠标悬停在.vp-doc表格上时，添加阴影和向上移动1px的动画效果 */
+/* 当鼠标悬停在.vp-doc 表格上时，添加阴影和向上移动 1px 的动画效果 */
 .vp-doc table:hover {
   box-shadow: var(--shadow-md);
   transform: translateY(-1px);
 }
 
-/* 设置.vp-doc表格的表头和单元格的样式 */
+/* 设置.vp-doc 表格的表头和单元格的样式 */
 .vp-doc table th,
 .vp-doc table td {
   /* 设置内边距 */
