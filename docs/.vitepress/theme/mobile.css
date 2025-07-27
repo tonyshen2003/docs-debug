@@ -1,15 +1,60 @@
-/* 移动端适配样式 - 飞书应用嵌入优化版 */
+/* 移动端适配样式 - 飞书设计规范优化版 */
 
-/* 基础移动端适配 */
+/* 飞书应用内嵌入适配 */
+.feishu-embedded {
+  /* 移除默认边距，适配飞书容器 */
+  margin: 0;
+  padding: 0;
+  /* 确保在飞书内正常显示 */
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* 基础移动端适配 - 遵循飞书设计规范 */
 @media (max-width: 768px) {
-  /* 文档容器基础设置 */
+  /* 文档容器基础设置 - 飞书风格 */
   .vp-doc {
-    padding: 16px;
+    padding: 20px 16px; /* 飞书推荐的内容边距 */
     min-height: 100vh;
     box-sizing: border-box;
+    /* 飞书风格的行高和字体大小 */
+    line-height: 1.6;
+    font-size: 16px;
   }
 
-  /* 表格移动端适配 */
+  /* 飞书风格的标题层级 */
+  .vp-doc h1 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 32px 0 20px;
+    color: var(--vp-c-text-1);
+  }
+
+  .vp-doc h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 28px 0 16px;
+    color: var(--vp-c-text-1);
+  }
+
+  .vp-doc h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 24px 0 12px;
+    color: var(--vp-c-text-1);
+  }
+
+  /* 飞书风格的段落间距 */
+  .vp-doc p {
+    margin: 16px 0;
+    line-height: 1.7;
+    color: var(--vp-c-text-1);
+  }
+
+  /* 表格移动端适配 - 飞书风格 */
   .vp-doc table {
     display: block;
     width: 100%;
@@ -17,16 +62,19 @@
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
     border: 1px solid var(--vp-c-border);
-    border-radius: 8px;
-    margin: 16px 0;
+    border-radius: 12px; /* 飞书风格的圆角 */
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); /* 飞书风格的阴影 */
+    background-color: var(--vp-c-bg);
   }
 
   .vp-doc table th,
   .vp-doc table td {
     min-width: 120px;
-    padding: 8px 12px;
-    font-size: 14px;
-    line-height: 1.4;
+    padding: 12px 16px; /* 飞书推荐的单元格内边距 */
+    font-size: 15px;
+    line-height: 1.5;
+    border-bottom: 1px solid var(--vp-c-divider-light);
   }
 
   .vp-doc table th {
@@ -35,18 +83,27 @@
     position: sticky;
     top: 0;
     z-index: 1;
+    color: var(--vp-c-text-1);
+    font-size: 14px;
+    text-align: left;
   }
 
+  .vp-doc table tr:last-child td {
+    border-bottom: none;
+  }
+
+  /* 飞书风格的表格提示 */
   .vp-doc table::after {
-    content: "← 左右滑动查看更多 →";
+    content: "💡 左右滑动查看更多内容";
     display: block;
     text-align: center;
-    font-size: 12px;
+    font-size: 13px;
     color: var(--vp-c-text-2);
-    padding: 8px;
+    padding: 12px;
     background-color: var(--vp-c-bg-soft);
-    border-top: 1px solid var(--vp-c-border);
+    border-top: 1px solid var(--vp-c-divider-light);
     margin-top: -1px;
+    border-radius: 0 0 12px 12px;
   }
 
   /* Mermaid 图表移动端适配 */
@@ -85,68 +142,117 @@
     border-radius: 4px;
   }
 
-  /* 代码块移动端适配 */
+  /* 代码块移动端适配 - 飞书风格 */
   .vp-doc div[class*="language-"] {
-    margin: 16px -16px;
-    border-radius: 0;
+    margin: 20px -16px;
+    border-radius: 12px;
+    border: 1px solid var(--vp-c-border);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
   }
 
   .vp-doc div[class*="language-"] pre {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    padding: 16px 20px;
+    margin: 0;
+    background-color: var(--vp-c-bg-alt);
+    font-size: 14px;
+    line-height: 1.6;
   }
 
-  /* 卡片组件移动端适配 */
+  /* 代码块语言标签 - 飞书风格 */
+  .vp-doc div[class*="language-"]::before {
+    background-color: var(--vp-c-bg-soft);
+    color: var(--vp-c-text-2);
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 0 0 8px 8px;
+    font-weight: 500;
+  }
+
+  /* 卡片组件移动端适配 - 飞书风格 */
   div[style*="grid-template-columns"] {
     grid-template-columns: 1fr !important;
-    gap: 16px !important;
+    gap: 20px !important;
   }
 
   .card {
-    padding: 16px;
-    margin-bottom: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
     border: 1px solid var(--vp-c-border);
-    border-radius: 8px;
-    background-color: var(--vp-c-bg-soft);
+    border-radius: 16px; /* 飞书风格的大圆角 */
+    background-color: var(--vp-c-bg);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   }
 
   .card .icon {
-    font-size: 24px;
+    font-size: 28px;
+    margin-bottom: 12px;
   }
 
   .card .title {
     font-size: 18px;
+    font-weight: 600;
     margin: 12px 0 8px;
+    color: var(--vp-c-text-1);
   }
 
   .card .description {
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--vp-c-text-2);
   }
 
-  /* 导航和内容区域优化 */
+  /* 导航和内容区域优化 - 飞书风格 */
   .VPNavBar {
-    padding: 0 16px;
+    padding: 0 20px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--vp-c-divider-light);
   }
 
   .VPSidebar {
-    padding: 16px;
+    padding: 20px;
+    background-color: var(--vp-c-bg-soft);
   }
 
   .VPContent {
     padding: 0;
-    margin-bottom: 60px; /* 为底部固定区域留空间 */
+    margin-bottom: 80px; /* 为底部固定区域留更多空间 */
   }
 
-  .vp-doc h1,
-  .vp-doc h2,
-  .vp-doc h3 {
-    margin-top: 24px;
-    margin-bottom: 16px;
+  /* 飞书风格的列表样式 */
+  .vp-doc ul,
+  .vp-doc ol {
+    margin: 16px 0;
+    padding-left: 24px;
   }
 
-  .vp-doc p {
-    margin: 12px 0;
+  .vp-doc li {
+    margin: 8px 0;
+    line-height: 1.6;
+  }
+
+  /* 飞书风格的引用块 */
+  .vp-doc blockquote {
+    margin: 20px 0;
+    padding: 16px 20px;
+    background-color: var(--vp-c-bg-soft);
+    border-left: 4px solid var(--vp-c-brand);
+    border-radius: 0 12px 12px 0;
+    font-style: normal;
+  }
+
+  .vp-doc blockquote p {
+    margin: 0;
+    color: var(--vp-c-text-1);
   }
 }
 
@@ -197,62 +303,234 @@
   }
 }
 
-/* 移动端底部固定导航菜单 */
+/* 移动端底部固定导航菜单 - 飞书设计规范 */
 @media (max-width: 768px) {
-  /* 底部固定导航栏 */
+  /* 快速菜单遮罩 - 飞书风格 */
+  .quick-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* 飞书风格的遮罩透明度 */
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* 飞书风格的缓动 */
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+
+  .quick-menu-overlay.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* 快速菜单容器 - 飞书风格 */
+  .quick-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--vp-c-bg);
+    border-radius: 20px 20px 0 0; /* 飞书风格的大圆角 */
+    padding: 24px 20px;
+    transform: translateY(100%);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 2001;
+    max-height: 65vh;
+    overflow-y: auto;
+    box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.12); /* 飞书风格的阴影 */
+    border: 1px solid var(--vp-c-divider-light);
+  }
+
+  .quick-menu.show {
+    transform: translateY(0);
+  }
+
+  /* 暗色模式下的快速菜单 */
+  .dark .quick-menu {
+    background-color: var(--vp-c-bg-alt);
+    border-color: var(--vp-c-divider);
+  }
+
+  /* 快速菜单头部 - 飞书风格 */
+  .quick-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--vp-c-divider-light);
+    position: relative;
+  }
+
+  /* 飞书风格的拖拽指示器 */
+  .quick-menu-header::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 36px;
+    height: 4px;
+    background-color: var(--vp-c-text-3);
+    border-radius: 2px;
+    opacity: 0.6;
+  }
+
+  .quick-menu-title {
+    font-size: 20px; /* 飞书风格的标题大小 */
+    font-weight: 600;
+    color: var(--vp-c-text-1);
+    letter-spacing: 0.2px;
+  }
+
+  .quick-menu-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: var(--vp-c-text-2);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 12px; /* 飞书风格的圆角 */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }
+
+  .quick-menu-close:hover {
+    background-color: var(--vp-c-bg-soft);
+    color: var(--vp-c-text-1);
+    transform: scale(1.05);
+  }
+
+  .quick-menu-close:active {
+    transform: scale(0.95);
+  }
+
+  /* 快速菜单内容区域 - 飞书风格 */
+  .quick-menu-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .quick-menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 12px;
+    background-color: var(--vp-c-bg-soft);
+    border-radius: 16px;
+    text-decoration: none;
+    color: var(--vp-c-text-1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+
+  .quick-menu-item:hover {
+    background-color: var(--vp-c-brand-soft);
+    border-color: var(--vp-c-brand-light);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .quick-menu-item .icon {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: var(--vp-c-brand);
+    transition: all 0.3s ease;
+  }
+
+  .quick-menu-item:hover .icon {
+    transform: scale(1.1);
+  }
+
+  .quick-menu-item .text {
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.3;
+    letter-spacing: 0.2px;
+  }
+
+  /* 底部固定导航栏 - 飞书风格 */
   .mobile-bottom-nav {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 60px;
-    background-color: var(--vp-c-bg);
-    border-top: 1px solid var(--vp-c-border);
+    height: 68px; /* 飞书推荐的底部导航高度 */
+    background-color: rgba(255, 255, 255, 0.95);
+    border-top: 1px solid var(--vp-c-divider-light);
     display: flex;
     justify-content: space-around;
     align-items: center;
     z-index: 1000;
-    padding: 0 8px;
+    padding: 8px 12px;
     box-sizing: border-box;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(20px); /* 飞书风格的毛玻璃效果 */
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.08); /* 飞书风格的阴影 */
   }
 
-  /* 导航项 */
+  /* 暗色模式下的底部导航 */
+  .dark .mobile-bottom-nav {
+    background-color: rgba(26, 26, 26, 0.95);
+    border-top-color: var(--vp-c-divider);
+  }
+
+  /* 导航项 - 飞书风格 */
   .mobile-bottom-nav .nav-item {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 8px 4px;
+    padding: 6px 12px;
     text-decoration: none;
     color: var(--vp-c-text-2);
-    transition: all 0.2s ease;
-    border-radius: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* 飞书风格的缓动函数 */
+    border-radius: 12px; /* 飞书风格的圆角 */
     min-height: 44px;
     cursor: pointer;
+    background-color: transparent;
+    position: relative;
   }
 
   .mobile-bottom-nav .nav-item:hover,
   .mobile-bottom-nav .nav-item.active {
     color: var(--vp-c-brand);
-    background-color: var(--vp-c-brand-soft);
+    background-color: var(--vp-c-brand-soft); /* 飞书风格的激活背景 */
+    transform: translateY(-1px); /* 微妙的悬浮效果 */
   }
 
-  /* 导航图标 */
+  /* 导航图标 - 飞书风格 */
   .mobile-bottom-nav .nav-item .icon {
-    font-size: 20px;
-    margin-bottom: 2px;
+    font-size: 22px; /* 稍大的图标 */
+    margin-bottom: 4px;
     line-height: 1;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  /* 导航文字 */
+  .mobile-bottom-nav .nav-item:hover .icon,
+  .mobile-bottom-nav .nav-item.active .icon {
+    transform: scale(1.05); /* 更微妙的缩放效果 */
+  }
+
+  /* 导航文字 - 飞书风格 */
   .mobile-bottom-nav .nav-item .text {
     font-size: 11px;
-    line-height: 1;
+    line-height: 1.2;
     font-weight: 500;
     text-align: center;
+    letter-spacing: 0.2px; /* 飞书风格的字间距 */
   }
 
   /* 徽章样式 */
@@ -273,16 +551,21 @@
     justify-content: center;
   }
 
-  /* 底部安全区域适配（iPhone X+） */
+  /* 底部安全区域适配（iPhone X+） - 飞书风格 */
   .mobile-bottom-nav {
-    padding-bottom: env(safe-area-inset-bottom);
-    height: calc(60px + env(safe-area-inset-bottom));
+    padding-bottom: max(8px, env(safe-area-inset-bottom)); /* 飞书风格的安全区域适配 */
+    height: calc(68px + max(8px, env(safe-area-inset-bottom))); /* 适配新的导航高度 */
   }
 
-  /* 为内容区域增加底部边距 */
+  /* 为内容区域增加底部边距 - 飞书风格 */
   .VPContent,
   .vp-doc {
-    padding-bottom: calc(80px + env(safe-area-inset-bottom));
+    padding-bottom: calc(88px + max(8px, env(safe-area-inset-bottom))); /* 适配新的导航高度 */
+  }
+
+  /* 快速菜单的安全区域适配 */
+  .quick-menu {
+    padding-bottom: calc(24px + max(8px, env(safe-area-inset-bottom)));
   }
 
   /* 隐藏部分非必要元素 */
@@ -290,26 +573,59 @@
     display: none;
   }
 
-  /* 快速操作按钮 */
+  /* 快速操作按钮 - 飞书风格 */
   .mobile-bottom-nav .quick-action {
     position: relative;
+    overflow: hidden;
   }
 
   .mobile-bottom-nav .quick-action .icon {
     background: linear-gradient(135deg, var(--vp-c-brand), var(--vp-c-brand-light));
     color: white;
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    font-size: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    z-index: 1;
+  }
+
+  .mobile-bottom-nav .quick-action:hover .icon {
+    transform: scale(1.1) translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  /* 快速操作按钮的涟漪效果 */
+  .mobile-bottom-nav .quick-action::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: var(--vp-c-brand);
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+  }
+
+  .mobile-bottom-nav .quick-action:active::before {
+    width: 80px;
+    height: 80px;
+    opacity: 0.1;
   }
 
   .mobile-bottom-nav .quick-action .text {
-    margin-top: 4px;
+    margin-top: 6px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    z-index: 1;
   }
 }
 
