@@ -2,10 +2,11 @@ import { defineConfig } from "vitepress";
 import markdownItKatex from 'markdown-it-katex'
 import { InlineLinkPreviewElementTransform } from '@nolebase/vitepress-plugin-inline-link-preview/markdown-it'
 import footnote from 'markdown-it-footnote'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 
 // https://vitepress.dev/reference/site-config
 
-export default defineConfig({
+export default withMermaid(defineConfig({
   title: "树莓技术库",
   description: "流动的影像传承历史，不变的温度记录人文",
 
@@ -23,6 +24,7 @@ export default defineConfig({
       copyright:
         "Copyright ©  2018-2025 苏州中学树莓社 Digital Media Association of SHS. All Rights Reserved.",
     },
+
 
     nav: [
       // 顶部菜单
@@ -307,7 +309,8 @@ export default defineConfig({
     config: (md) => {
       md.use(markdownItKatex),
       md.use(InlineLinkPreviewElementTransform),
-      md.use(footnote)
+      md.use(footnote);
+      // Mermaid 由 vitepress-plugin-mermaid 自动处理
     },
     image: {
       lazyLoading: true
@@ -340,7 +343,7 @@ export default defineConfig({
       ], 
     }, 
   }
-});
+}));
 
 const customElements = [
   'collapsible-card',
