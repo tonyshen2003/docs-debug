@@ -18,8 +18,8 @@
     min-height: 100vh;
     box-sizing: border-box;
     /* 飞书风格的行高和字体大小 */
-    line-height: 1.6;
-    font-size: 16px;
+    line-height: var(--line-height-relaxed);
+    font-size: var(--font-size-body);
   }
 
 /* 图表性能优化 */
@@ -65,7 +65,7 @@
   .mermaid[data-loading="true"]::before {
     content: "📊 图表加载中...";
     color: var(--vp-c-text-2);
-    font-size: 14px;
+    font-size: var(--font-size-caption);
     animation: pulse 1.5s ease-in-out infinite;
   }
 
@@ -87,8 +87,8 @@
   .mermaid[data-error="true"]::before {
     content: "⚠️ 图表渲染失败";
     color: #dc2626;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: var(--font-size-caption);
+    font-weight: var(--font-weight-medium);
   }
 
   /* 可访问性改进 */
@@ -123,7 +123,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
+    font-size: var(--font-size-body);
     color: var(--vp-c-text-1);
     cursor: pointer;
     transition: all 0.2s ease;
@@ -155,7 +155,7 @@
   .mermaid .node text,
   .mermaid .edgeLabel text,
   .mermaid .label text {
-    font-size: 13px !important;
+    font-size: var(--font-size-caption) !important;
   }
 }
 
@@ -169,74 +169,74 @@
 
   /* 时序图优化 */
   .mermaid[data-type="sequence"] .actor {
-    font-size: 12px !important;
+    font-size: var(--font-size-caption) !important;
   }
 
   /* 甘特图优化 */
   .mermaid[data-type="gantt"] .taskText {
-    font-size: 11px !important;
+    font-size: var(--font-size-caption) !important;
   }
 
   /* 类图优化 */
   .mermaid[data-type="class"] .classTitle {
-    font-size: 13px !important;
-    font-weight: 600 !important;
+    font-size: var(--font-size-caption) !important;
+    font-weight: var(--font-weight-semibold) !important;
   }
 
   /* 状态图优化 */
   .mermaid[data-type="state"] .state-title {
-    font-size: 12px !important;
+    font-size: var(--font-size-caption) !important;
   }
 
   /* 饼图优化 */
   .mermaid[data-type="pie"] .pieTitle {
-    font-size: 14px !important;
-    font-weight: 600 !important;
+    font-size: var(--font-size-caption) !important;
+    font-weight: var(--font-weight-semibold) !important;
   }
 
   /* Git 图优化 */
   .mermaid[data-type="git"] .commit-label {
-    font-size: 11px !important;
+    font-size: var(--font-size-caption) !important;
   }
 
   /* 用户旅程图优化 */
   .mermaid[data-type="journey"] .section {
-    font-size: 12px !important;
+    font-size: var(--font-size-caption) !important;
   }
 
   /* ER 图优化 */
   .mermaid[data-type="er"] .entityLabel {
-    font-size: 12px !important;
+    font-size: var(--font-size-caption) !important;
   }
 
   /* C4 图优化 */
   .mermaid[data-type="c4"] .c4-person,
   .mermaid[data-type="c4"] .c4-container {
-    font-size: 11px !important;
+    font-size: var(--font-size-caption) !important;
   }
 }
 
   /* 飞书风格的标题层级 */
   .vp-doc h1 {
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 1.3;
+    font-size: var(--font-size-h2); /* 移动端使用较小的标题 */
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-tight);
     margin: 32px 0 20px;
     color: var(--vp-c-text-1);
   }
 
   .vp-doc h2 {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.4;
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-normal);
     margin: 28px 0 16px;
     color: var(--vp-c-text-1);
   }
 
   .vp-doc h3 {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.4;
+    font-size: var(--font-size-h4);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-normal);
     margin: 24px 0 12px;
     color: var(--vp-c-text-1);
   }
@@ -244,7 +244,7 @@
   /* 飞书风格的段落间距 */
   .vp-doc p {
     margin: 16px 0;
-    line-height: 1.7;
+    line-height: var(--line-height-relaxed);
     color: var(--vp-c-text-1);
   }
 
@@ -257,17 +257,26 @@
   }
   
   /* 移动端表格首列锁定效果增强 */
+  /* 设置表格第一列的样式 */
   .vp-doc table th:first-child,
   .vp-doc table td:first-child {
+    /* 设置元素为固定定位 */
     position: sticky;
+    /* 设置元素距离左侧的距离 */
     left: 0;
+    /* 设置元素的堆叠顺序 */
     z-index: 5;
+    /* 设置元素的背景颜色 */
     background-color: var(--vp-c-bg);
-    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.08);
+    /* 设置元素的阴影 */
+    /* box-shadow: 2px 0 4px rgba(0, 0, 0, 0.08); */
   }
 
+  /* 设置表格表头的样式 */
   .vp-doc table th:first-child {
+    /* 设置元素的背景颜色 */
     background-color: var(--vp-c-bg-soft);
+    /* 设置元素的堆叠顺序 */
     z-index: 15;
   }
   
@@ -320,8 +329,8 @@
   .mermaid .node text,
   .mermaid .edgeLabel text,
   .mermaid .label text {
-    font-size: 14px !important;
-    font-weight: 500 !important;
+    font-size: var(--font-size-table) !important;
+    font-weight: var(--font-weight-medium) !important;
     fill: var(--vp-c-text-1) !important;
     font-family: var(--vp-font-family-base), 'Noto Sans SC', sans-serif !important;
   }
@@ -353,14 +362,14 @@
     content: "💡 左右滑动查看完整图表";
     display: block;
     text-align: center;
-    font-size: 13px;
+    font-size: var(--font-size-caption);
     color: var(--vp-c-text-2);
     margin-top: 16px;
     padding: 12px 16px;
     background: var(--vp-c-bg);
     border: 1px solid var(--vp-c-divider-light);
     border-radius: 12px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   }
 
@@ -379,18 +388,18 @@
     padding: 16px 20px;
     margin: 0;
     background-color: var(--vp-c-bg-alt);
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: var(--font-size-code);
+    line-height: var(--line-height-relaxed);
   }
 
   /* 代码块语言标签 - 飞书风格 */
   .vp-doc div[class*="language-"]::before {
     background-color: var(--vp-c-bg-soft);
     color: var(--vp-c-text-2);
-    font-size: 12px;
+    font-size: var(--font-size-caption);
     padding: 4px 12px;
     border-radius: 0 0 8px 8px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
   }
 
   /* 卡片组件移动端适配 - 飞书风格 */
@@ -415,20 +424,20 @@
   }
 
   .card .icon {
-    font-size: 28px;
+    font-size: var(--font-size-h2);
     margin-bottom: 12px;
   }
 
   .card .title {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: var(--font-size-h5);
+    font-weight: var(--font-weight-semibold);
     margin: 12px 0 8px;
     color: var(--vp-c-text-1);
   }
 
   .card .description {
-    font-size: 15px;
-    line-height: 1.6;
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-relaxed);
     color: var(--vp-c-text-2);
   }
 
@@ -459,7 +468,7 @@
 
   .vp-doc li {
     margin: 8px 0;
-    line-height: 1.6;
+    line-height: var(--line-height-relaxed);
   }
 
   /* 飞书风格的引用块 */
@@ -490,12 +499,12 @@
   .mermaid .node text,
   .mermaid .edgeLabel text,
   .mermaid .label text {
-    font-size: 12px !important;
+    font-size: var(--font-size-caption) !important;
   }
 
   /* 图表提示信息优化 */
   .mermaid::after {
-    font-size: 12px;
+    font-size: var(--font-size-caption);
     padding: 10px 12px;
     margin-top: 12px;
   }
@@ -532,8 +541,8 @@
   }
   
   .vp-doc .table-card-header {
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-h6);
     color: var(--vp-c-text-1);
     margin-bottom: 12px;
     padding-bottom: 8px;
@@ -555,27 +564,27 @@
   }
   
   .vp-doc .table-card-label {
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     color: var(--vp-c-text-2);
-    font-size: 13px;
+    font-size: var(--font-size-caption);
     min-width: 80px;
     flex-shrink: 0;
-    line-height: 1.4;
+    line-height: var(--line-height-normal);
   }
   
   .vp-doc .table-card-value {
     color: var(--vp-c-text-1);
-    font-size: 14px;
+    font-size: var(--font-size-table);
     text-align: right;
     flex: 1;
     margin-left: 16px;
-    line-height: 1.4;
+    line-height: var(--line-height-normal);
     word-break: break-word;
   }
   
   /* 卡片模式下的状态标签 */
   .vp-doc .table-card-value .status {
-    font-size: 11px;
+    font-size: var(--font-size-caption);
     padding: 3px 6px;
     border-radius: 4px;
   }
@@ -595,7 +604,7 @@
   text-align: center;
   padding: 40px 20px;
   color: var(--vp-c-text-3);
-  font-size: 14px;
+  font-size: var(--font-size-table);
 }
 
 .vp-doc .table-loading::before {
@@ -629,13 +638,13 @@
 }
 
 .vp-doc .table-empty-text {
-  font-size: 14px;
+  font-size: var(--font-size-table);
   margin-bottom: 8px;
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
 }
 
 .vp-doc .table-empty-desc {
-  font-size: 12px;
+  font-size: var(--font-size-caption);
   opacity: 0.7;
 }
 
@@ -785,11 +794,11 @@
   }
 
   .card .title {
-    font-size: 16px;
+    font-size: var(--font-size-body);
   }
 
   .card .description {
-    font-size: 13px;
+    font-size: var(--font-size-caption);
   }
 }
 
@@ -879,8 +888,8 @@
   }
 
   .quick-menu-title {
-    font-size: 20px; /* 飞书风格的标题大小 */
-    font-weight: 600;
+    font-size: var(--font-size-h5); /* 飞书风格的标题大小 */
+    font-weight: var(--font-weight-semibold);
     color: var(--vp-c-text-1);
     letter-spacing: 0.2px;
   }
@@ -888,7 +897,7 @@
   .quick-menu-close {
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: var(--font-size-h5);
     color: var(--vp-c-text-2);
     cursor: pointer;
     padding: 8px;
@@ -941,7 +950,7 @@
   }
 
   .quick-menu-item .icon {
-    font-size: 24px;
+    font-size: var(--font-size-h5);
     margin-bottom: 8px;
     color: var(--vp-c-brand);
     transition: all 0.3s ease;
@@ -952,8 +961,8 @@
   }
 
   .quick-menu-item .text {
-    font-size: 13px;
-    font-weight: 500;
+    font-size: var(--font-size-caption);
+    font-weight: var(--font-weight-medium);
     text-align: center;
     line-height: 1.3;
     letter-spacing: 0.2px;
@@ -1012,7 +1021,7 @@
 
   /* 导航图标 - 飞书风格 */
   .mobile-bottom-nav .nav-item .icon {
-    font-size: 22px; /* 稍大的图标 */
+    font-size: var(--font-size-h5); /* 稍大的图标 */
     margin-bottom: 4px;
     line-height: 1;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1025,9 +1034,9 @@
 
   /* 导航文字 - 飞书风格 */
   .mobile-bottom-nav .nav-item .text {
-    font-size: 11px;
+    font-size: var(--font-size-caption);
     line-height: 1.2;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     text-align: center;
     letter-spacing: 0.2px; /* 飞书风格的字间距 */
   }
@@ -1040,7 +1049,7 @@
     transform: translateX(8px);
     background-color: var(--vp-c-danger);
     color: white;
-    font-size: 10px;
+    font-size: var(--font-size-caption);
     padding: 1px 4px;
     border-radius: 8px;
     min-width: 16px;
@@ -1087,7 +1096,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: var(--font-size-body);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
@@ -1131,14 +1140,14 @@
 /* 特殊设备适配 */
 @media (max-width: 320px) {
   .feishu-bottom-bar .btn {
-    font-size: 12px;
+    font-size: var(--font-size-caption);
     height: 32px;
   }
   
   .vp-doc table th,
   .vp-doc table td {
     min-width: 80px;
-    font-size: 12px;
+    font-size: var(--font-size-caption);
     padding: 4px 6px;
   }
 }
@@ -1170,7 +1179,7 @@
     align-items: center;
     justify-content: center;
     height: 200px;
-    font-size: 14px;
+    font-size: var(--font-size-caption);
     color: var(--vp-c-text-2);
   }
 

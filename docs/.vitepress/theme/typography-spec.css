@@ -1,0 +1,231 @@
+/* 字体规范 - 基于飞书设计规范 */
+/* 参考：https://open.feishu.cn/document/design-specification/design-language/font */
+
+:root {
+  /* 字体家族 */
+  --vp-font-family-base: "Noto Sans", "Noto Sans SC", sans-serif;
+  --vp-font-family-logo: "DFPHanziPen-GBW5", sans-serif;
+  --vp-font-family-mono: "Maple Mono", monospace, "Noto Sans SC", sans-serif;
+  --vp-font-family-serif: "Noto Serif SC", "SimSun", "宋体", serif;
+  
+  /* 字重规范 - 飞书标准 */
+  --font-weight-light: 300;     /* 细体 */
+  --font-weight-regular: 400;   /* 常规 - 飞书主要使用 */
+  --font-weight-medium: 500;    /* 中等 - 飞书主要使用 */
+  --font-weight-semibold: 600;  /* 半粗 - 大标题加粗 */
+  --font-weight-bold: 700;      /* 粗体 */
+  
+  /* PC 端字体大小规范 */
+  --font-size-h1: 32px;         /* 一级标题 */
+  --font-size-h2: 28px;         /* 二级标题 */
+  --font-size-h3: 24px;         /* 三级标题 */
+  --font-size-h4: 20px;         /* 四级标题 */
+  --font-size-h5: 18px;         /* 五级标题 */
+  --font-size-h6: 16px;         /* 六级标题 */
+  
+  --font-size-body: 16px;        /* 正文 */
+  --font-size-caption: 14px;     /* 说明文字 */
+  
+  /* 兼容性别名 - 映射到统一的两种字体大小 */
+  --font-size-table: var(--font-size-caption);  /* 表格字体 */
+  --font-size-code: var(--font-size-caption);   /* 代码字体 */
+  
+  /* 移动端字体大小规范已移除 - 使用统一规范 */
+  
+  /* 行高规范 */
+  --line-height-tight: 1.25;     /* 紧密 - 大标题 */
+  --line-height-normal: 1.4;     /* 正常 - 小标题 */
+  --line-height-relaxed: 1.5;    /* 宽松 - 正文 */
+  --line-height-loose: 1.8;      /* 松散 - 长文本 */
+  
+  /* 字间距规范 */
+  --letter-spacing-tight: -0.02em;  /* 大标题 */
+  --letter-spacing-normal: -0.01em; /* 中标题 */
+  --letter-spacing-wide: 0.01em;    /* 小文字 */
+}
+
+/* 统一字体规范应用 - 所有平台一致 */
+/* 标题层级 */
+.vp-doc h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+  margin: 0 0 24px;
+}
+
+.vp-doc h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-normal);
+  margin: 32px 0 16px;
+}
+
+.vp-doc h3 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+  margin: 24px 0 12px;
+}
+
+.vp-doc h4 {
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+  margin: 20px 0 8px;
+}
+
+.vp-doc h5 {
+  font-size: var(--font-size-h5);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+  margin: 16px 0 8px;
+}
+
+.vp-doc h6 {
+  font-size: var(--font-size-h6);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+  margin: 16px 0 8px;
+}
+
+/* 正文内容 */
+.vp-doc p {
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-relaxed);
+  margin: 12px 0;
+}
+
+/* 小正文 */
+.vp-doc .text-small {
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+}
+
+/* 说明文字 */
+.vp-doc .caption {
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+  color: var(--vp-c-text-2);
+}
+
+/* 特殊组件字体规范 */
+
+/* 导航栏 */
+.VPNavBarTitle .title {
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-medium);
+  font-family: var(--vp-font-family-base);
+}
+
+.VPNavBarMenuLink {
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-regular);
+  font-family: var(--vp-font-family-base);
+}
+
+/* 侧边栏 */
+.VPSidebarItem .text {
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-regular);
+}
+
+.VPSidebarItem.is-active .text {
+  font-weight: var(--font-weight-medium);
+}
+
+/* 代码块 */
+.vp-doc code {
+  font-family: var(--vp-font-family-mono);
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-regular);
+}
+
+.vp-doc pre code {
+  font-size: var(--font-size-caption);
+  line-height: 1.5;
+}
+
+/* 表格 */
+.vp-doc table {
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-regular);
+}
+
+.vp-doc table th {
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-medium);
+}
+
+/* 引用块 */
+.vp-doc blockquote {
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-relaxed);
+  font-style: italic;
+}
+
+/* 列表 */
+.vp-doc ul, .vp-doc ol {
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-relaxed);
+  margin: 12px 0;
+}
+
+/* 链接 */
+.vp-doc a {
+  font-weight: var(--font-weight-medium);
+}
+
+/* 强调文本 */
+.vp-doc strong {
+  font-weight: var(--font-weight-semibold);
+}
+
+.vp-doc em {
+  font-style: italic;
+  font-weight: var(--font-weight-regular);
+}
+
+/* 工具类 */
+.text-xs { font-size: var(--font-size-caption); }
+.text-sm { font-size: var(--font-size-caption); }
+.text-base { font-size: var(--font-size-body); }
+.text-xl { font-size: var(--font-size-h6); }
+.text-2xl { font-size: var(--font-size-h5); }
+.text-3xl { font-size: var(--font-size-h4); }
+.text-4xl { font-size: var(--font-size-h3); }
+.text-5xl { font-size: var(--font-size-h2); }
+.text-6xl { font-size: var(--font-size-h1); }
+
+.font-light { font-weight: var(--font-weight-light); }
+.font-normal { font-weight: var(--font-weight-regular); }
+.font-medium { font-weight: var(--font-weight-medium); }
+.font-semibold { font-weight: var(--font-weight-semibold); }
+.font-bold { font-weight: var(--font-weight-bold); }
+
+.leading-tight { line-height: var(--line-height-tight); }
+.leading-normal { line-height: var(--line-height-normal); }
+.leading-relaxed { line-height: var(--line-height-relaxed); }
+.leading-loose { line-height: var(--line-height-loose); }
+
+/* 字体颜色规范 - 飞书灰阶色 */
+.text-primary { color: #1F2329; }      /* 一、二级主标题 */
+.text-secondary { color: #646A73; }    /* 一级正文 */
+.text-tertiary { color: #8F959E; }     /* 副标题、二级正文 */
+.text-quaternary { color: #BBBFC4; }   /* Placeholder、次要信息 */
+.text-disabled { color: #BBBFC4; }     /* Disable */
+
+/* 品牌色 */
+.text-brand { color: #1456F0; }        /* 主品牌色 - 链接、按钮文字 */
+
+/* 功能色 */
+.text-success { color: #00C896; }      /* 成功 */
+.text-warning { color: #FF8800; }      /* 警告 */
+.text-error { color: #F54A45; }        /* 错误 */
+.text-info { color: #1456F0; }         /* 信息 */

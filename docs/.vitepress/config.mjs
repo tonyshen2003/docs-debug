@@ -214,7 +214,6 @@ export default withMermaid(defineConfig({
       /*{
         text: "Template",
         items: [
-          { text: "Markdown Examples", link: "/guide/markdown-examples" },
           { text: "Runtime API Examples", link: "/guide/api-examples" },
         ],
       },*/
@@ -227,6 +226,14 @@ export default withMermaid(defineConfig({
           collapsed: false,
           items: [
             { text: "总览", link: "/club-library/" },
+          ],
+        },
+        {
+          text: "设计规范",
+          collapsed: false,
+          items: [
+            { text: "字体规范", link: "/club-library/design-specs/font-specification" },
+            { text: "Markdown 示例", link: "/club-library/design-specs/markdown-examples" },
           ],
         },
       ],

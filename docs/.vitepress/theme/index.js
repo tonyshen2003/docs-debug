@@ -18,6 +18,7 @@ import { faTiktok, faVimeoV, faBilibili } from '@fortawesome/free-brands-svg-ico
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import './fonts.css'
+import './typography-spec.css'
 import './customize.css'
 import './mobile.css'
 import './responsive.css'

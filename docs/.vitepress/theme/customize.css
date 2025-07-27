@@ -1,7 +1,4 @@
 :root {
-  --vp-font-family-base: "Noto Sans", "Noto Sans SC", sans-serif;
-  --vp-font-family-logo: "DFPHanziPen-GBW5", sans-serif;
-  --vp-font-family-mono: "Maple Mono", monospace, "Noto Sans SC", sans-serif;
   --vp-home-hero-name-background: -webkit-linear-gradient(
     120deg,
     #d795c0 45%,
@@ -100,10 +97,21 @@ div[data-type="mermaid"] {
   align-items: center;
 }
 
-/* Mermaid SVG 元素居中 */
+/* Mermaid SVG 元素居中 - 只能缩小不能放大 */
 .mermaid svg {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
   display: block;
+  /* 限制只能缩小，不能放大 */
+  transform-origin: center;
+  max-height: 100vh;
+  /* 禁用用户缩放 */
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  /* 禁用触摸缩放 */
+  touch-action: pan-x pan-y;
+  -webkit-touch-callout: none;
 }
