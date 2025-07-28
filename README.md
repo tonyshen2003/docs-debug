@@ -1,26 +1,27 @@
 <div align="center">
   <img src="docs/public/images/Shumei_docs_loge.jpg" alt="数媒文档 Logo" width="300">
+  
+  <h1>苏州中学树莓社技术文档</h1>
+  
+  <p><strong>🎬 专业级数字媒体制作技术知识库 | 从理论到实践的完整学习体系</strong></p>
+  
+  <p>
+    <a href="https://vitepress.dev/"><img src="https://img.shields.io/badge/VitePress-1.0+-646CFF?style=flat&logo=vite" alt="VitePress"></a>
+    <a href="https://vuejs.org/"><img src="https://img.shields.io/badge/Vue.js-3.0+-4FC08D?style=flat&logo=vue.js" alt="Vue.js"></a>
+    <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg" alt="License"></a>
+    <a href="https://github.com/Digital-Media-Association-of-SHS"><img src="https://img.shields.io/github/stars/Digital-Media-Association-of-SHS/Shumei-Tech-Docs?style=social" alt="GitHub Stars"></a>
+  </p>
 </div>
-
-# 苏州中学树莓社技术文档
-
-> 🎬 专业级数字媒体制作技术知识库 | 从理论到实践的完整学习体系
-
-[![VitePress](https://img.shields.io/badge/VitePress-1.0+-646CFF?style=flat&logo=vite)](https://vitepress.dev/)
-[![Vue.js](https://img.shields.io/badge/Vue.js-3.0+-4FC08D?style=flat&logo=vue.js)](https://vuejs.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/Digital-Media-Association-of-SHS/Shumei-Tech-Docs?style=social)](https://github.com/Digital-Media-Association-of-SHS)
 
 ## 🌟 项目概述
 
 本项目是苏州中学树莓社精心打造的**专业技术文档库**，汇集了数字媒体制作领域的核心知识与实践经验。
 
-**关于树莓社**：树莓社即"苏州中学数字媒体艺术社"，英文名称为 Digital Media Association of Suzhou High School，创立于 2018 年 9 月。"树莓"谐音"数媒"，意为数字媒体。树莓社是一个关注于新时代数字媒体的社团，一个以影视创作为核心的艺术创作交流平台。
+**关于树莓社**：[树莓社](https://szzxshumei.com)即"苏州中学数字媒体艺术社"，英文名称为 Digital Media Association of Suzhou High School，创立于 2018 年 9 月。"树莓"谐音"数媒"，意为数字媒体。树莓社是一个关注于新时代数字媒体的社团，一个以影视创作为核心的艺术创作交流平台。
 
 **核心业务**：
 - 🎬 **微电影制作** - 独立制作电影短片，浸润式学习影视创作过程
-- 📺 **校园电视台** - 运营《洱沐苏中》节目，展现苏中学子风采
-- 📰 **校园新闻** - 校内活动摄影摄像，传媒中心业务
+- 📺 **校园电视台与新闻** - 运营校园电视台及校内新闻拍摄
 - 🎞️ **纪录片创作** - 原创纪录片《苏迷》等项目，展现苏州文化魅力
 
 我们致力于为社团成员和数字媒体爱好者提供：
@@ -34,6 +35,8 @@
 
 ```
 📁 Shumei-Tech-Docs/
+├── 📁 .trae/                    # Trae AI 配置目录
+│   └── 📁 rules/                # 项目规则配置
 ├── 📁 docs/                     # 文档根目录
 │   ├── 📁 .vitepress/           # VitePress 配置与主题
 │   │   ├── 📄 config.mjs        # 站点配置文件
@@ -42,99 +45,93 @@
 │   ├── 📁 guide/                # 核心技术指南
 │   │   ├── 📁 EFP/              # 多机位制作 (Electronic Field Production)
 │   │   ├── 📁 digital-video-post-production/  # 数字后期制作
-│   │   └── 📁 digital-media-tech/  # 数字媒体技术
+│   │   ├── 📁 digital-media-tech/  # 数字媒体技术
+│   │   ├── 📄 api-examples.md   # API 示例文档
+│   │   └── 📄 index.md          # 指南首页
 │   ├── 📁 about/                # 团队介绍
 │   ├── 📁 club-library/         # 社团文库
-│   └── 📁 public/               # 静态资源
-│       ├── 📁 images/           # 图片素材
-│       └── 📁 fonts/            # 字体文件 (22MB+ 专业字体)
+│   ├── 📁 public/               # 静态资源
+│   │   ├── 📁 images/           # 图片素材
+│   │   ├── 📁 icons/            # 图标文件
+│   │   ├── 📁 fonts/            # 字体文件 (22MB+ 专业字体)
+│   │   └── 📄 *.png/*.webp      # Logo 和吉祥物图片
+│   ├── 📄 index.md              # 文档首页
+│   └── 📄 导播术语.md            # 导播专业术语词典
+├── 📄 .gitignore                # Git 忽略文件配置
 ├── 📄 package.json              # 项目依赖配置
+├── 📄 yarn.lock                 # Yarn 锁定文件
 └── 📄 README.md                 # 项目说明文档
 ```
 
 ## 📖 内容体系
 
-### 🎬 多机位制作 / EFP (Electronic Field Production)
-
-专业级现场制作技术，涵盖大型活动和节目的完整制作流程：
-
-- **📋 设备与系统**
-  - 专业设备清单与选型指南
-  - 播出传输系统搭建
-  - 信号流程设计与优化
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin: 30px 0;">
   
-- **🎯 项目管理**
-  - 活动策划与前期准备
-  - 现场执行与应急处理
-  - 团队协作与沟通机制
+  <div style="padding: 25px; border-radius: 12px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; box-shadow: 0 8px 32px rgba(0,0,0,0.1);">
+    <h3 style="margin-top: 0; display: flex; align-items: center; gap: 10px;">🎬 多机位制作</h3>
+    <p style="opacity: 0.9; margin-bottom: 15px;"><em>Electronic Field Production</em></p>
+    <ul style="list-style: none; padding: 0; margin: 0;">
+      <li>📋 专业设备与系统搭建</li>
+      <li>🎯 项目管理与团队协作</li>
+      <li>📸 现场制作与导播技术</li>
+    </ul>
+  </div>
   
-- **📸 制作技术**
-  - 多机位拍摄技巧
-  - 现场导播与切换
-  - 后期制作与包装
-
-### 🎞️ 数字后期制作 / Post-production Workflow
-
-从素材到成片的完整后期制作流程，包含业界标准工作流程：
-
-- **📊 项目管理**
-  - 素材管理与版本控制
-  - 工作流程标准化
-  - 团队协作最佳实践
+  <div style="padding: 25px; border-radius: 12px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; box-shadow: 0 8px 32px rgba(0,0,0,0.1);">
+    <h3 style="margin-top: 0; display: flex; align-items: center; gap: 10px;">🎞️ 数字后期制作</h3>
+    <p style="opacity: 0.9; margin-bottom: 15px;"><em>Post-production Workflow</em></p>
+    <ul style="list-style: none; padding: 0; margin: 0;">
+      <li>📊 项目管理与素材整理</li>
+      <li>🛠️ DaVinci • Premiere • AE</li>
+      <li>🎨 调色 • 音频 • 特效合成</li>
+    </ul>
+  </div>
   
-- **🛠️ 软件应用**
-  - **DaVinci Resolve** - 专业调色与剪辑
-  - **Adobe Premiere Pro** - 视频剪辑与合成
-  - **After Effects** - 视觉特效与动画
+  <div style="padding: 25px; border-radius: 12px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; box-shadow: 0 8px 32px rgba(0,0,0,0.1);">
+    <h3 style="margin-top: 0; display: flex; align-items: center; gap: 10px;">💻 数字媒体技术</h3>
+    <p style="opacity: 0.9; margin-bottom: 15px;"><em>Digital Media Technology</em></p>
+    <ul style="list-style: none; padding: 0; margin: 0;">
+      <li>🔧 编解码 • 存储 • 传输</li>
+      <li>🚀 虚拟制片 • AIGC • 实时渲染</li>
+      <li>🔒 版权保护 • 容灾备份</li>
+    </ul>
+  </div>
   
-- **🎨 技术专项**
-  - 色彩科学与调色技术
-  - 音频处理与混音
-  - 视觉特效与合成
-
-### 💻 数字媒体技术 / Digital Media Technology
-
-深入技术底层，探索数字媒体的核心原理与前沿应用：
-
-- **🔧 基础技术**
-  - 视频编解码原理与优化
-  - 存储架构与性能调优
-  - 网络传输协议与流媒体
-  
-- **🚀 前沿应用**
-  - 虚拟制片技术 (Virtual Production)
-  - AIGC 辅助创作工具
-  - 实时渲染与交互媒体
-  
-- **🔒 专业领域**
-  - 版权保护与 DRM 技术
-  - 容灾备份解决方案
-  - 行业技术规范与标准
+</div>
 
 ## ⚡ 技术栈
 
 ### 核心框架
-- **🏗️ VitePress** - 基于 Vue.js 3 和 Vite 的现代文档框架
-- **⚡ Vite** - 极速的前端构建工具
+- **🏗️ VitePress 1.6.3** - 基于 Vue.js 3 和 Vite 的现代文档框架
+- **⚡ Vite** - 极速的前端构建工具，支持局域网访问
 - **💚 Vue.js 3** - 渐进式 JavaScript 框架
+- **📦 Yarn 1.22.22** - 快速、可靠、安全的依赖管理工具
 
-### 功能增强
-- **📐 KaTeX** - 高质量数学公式渲染
-- **📊 Mermaid** - 流程图与思维导图支持
-- **🎨 Font Awesome** - 丰富的图标库
+### 功能增强插件
+- **📐 KaTeX 0.16.22** - 高质量数学公式渲染 (`@mdit/plugin-katex`)
+- **📊 Mermaid 10.9.1** - 流程图与思维导图支持 (`vitepress-plugin-mermaid`)
+- **🧠 Mermaid Mindmap** - 思维导图扩展 (`@mermaid-js/mermaid-mindmap`)
+- **🔗 内联链接预览** - 增强的链接体验 (`@nolebase/vitepress-plugin-inline-link-preview`)
+- **📝 脚注支持** - 学术级引用功能 (`markdown-it-footnote`)
+- **🎨 Font Awesome 7.0** - 丰富的图标库 (SVG Core + Vue 组件)
 - **🔍 本地搜索** - 全文搜索功能
 
-### 专业字体
-- **Inter** - 现代无衬线字体 (英文)
-- **Noto Sans SC** - Google 开源中文字体
+### 专业字体系统
+- **Inter** - 现代无衬线字体 (英文主体)
+- **Noto Sans SC** - Google 开源中文字体 (中文主体)
+- **Noto Sans** - 多语言支持字体
 - **枫叶体 (MapleMono)** - 等宽编程字体
 - **方正汉真广标** - 专业中文标题字体 (22MB)
+- **Adobe Fonts** - TypeKit 字体服务集成
 
-### 开发工具
-- **📝 Markdown** - 文档编写格式
-- **🔗 内联链接预览** - 增强的链接体验
-- **📝 脚注支持** - 学术级引用功能
-- **🖼️ 懒加载** - 图片性能优化
+### 开发特性
+- **📝 Markdown 增强** - 支持 KaTeX、脚注、内联预览
+- **🖼️ 图片懒加载** - 性能优化的图片加载
+- **🌐 多语言支持** - 中英文混排优化
+- **📱 响应式设计** - 移动端友好的界面
+- **🎨 暗色主题** - 护眼的深色模式
+- **⚡ 热重载开发** - 实时预览更改
+- **🔧 自定义组件** - Vue 组件扩展支持
 
 ## 🚀 快速开始
 
@@ -147,6 +144,7 @@ npm >= 8.0.0 或 yarn >= 1.22.0
 
 ### 克隆项目
 ```bash
+# 克隆项目
 git clone https://github.com/Digital-Media-Association-of-SHS/Shumei-Tech-Docs.git
 cd Shumei-Tech-Docs
 ```
@@ -231,7 +229,7 @@ npm run clean
 
 ## 📄 许可证
 
-本项目采用 [MIT 许可证](LICENSE) - 这意味着你可以自由地使用、修改和分发本项目的代码。
+本项目采用 [Creative Commons CC BY-NC-ND 4.0 许可证](LICENSE) - 这意味着你可以分享本项目的内容，但需要署名，禁止商业用途和修改。
 
 ## 🙏 致谢
 
@@ -239,14 +237,14 @@ npm run clean
 
 ---
 
-<div align="center">
-  <h3>🎬 流动的影像传承历史，不变的温度记录人文 🎬</h3>
-  <p><strong>苏州中学树莓社</strong></p>
-  <p><em>Digital Media Association of Suzhou High School</em></p>
+<div style="text-align: center; padding: 40px 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 15px; margin: 30px 0;">
+  <h2 style="margin: 0 0 15px 0; font-size: 1.5em;">🎬 流动的影像传承历史，不变的温度记录人文 🎬</h2>
+  <h3 style="margin: 0 0 10px 0; font-size: 1.2em;">苏州中学树莓社</h3>
+  <p style="margin: 0 0 20px 0; font-size: 1em; opacity: 0.9;"><em>Digital Media Association of Suzhou High School</em></p>
   
-  <br>
-  
-  <img src="https://img.shields.io/badge/Made%20with-❤️-red?style=for-the-badge" alt="Made with Love">
-  <img src="https://img.shields.io/badge/Powered%20by-VitePress-646CFF?style=for-the-badge&logo=vite" alt="Powered by VitePress">
+  <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+    <img src="https://img.shields.io/badge/Made%20with-❤️-red?style=for-the-badge" alt="Made with Love">
+    <img src="https://img.shields.io/badge/Powered%20by-VitePress-646CFF?style=for-the-badge&logo=vite" alt="Powered by VitePress">
+  </div>
 </div>
  

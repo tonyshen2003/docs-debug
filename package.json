@@ -1,4 +1,27 @@
 {
+  "name": "shumei-tech-docs",
+  "version": "1.0.0",
+  "description": "苏州中学树莓社技术文档 - 专业级数字媒体制作技术知识库",
+  "license": "CC-BY-NC-ND-4.0",
+  "author": "苏州中学树莓社 苏州中学数字媒体艺术社 <contact@szzxshumei.com>",
+  "homepage": "https://digital-media-association-of-shs.github.io/Shumei-Tech-Docs/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Digital-Media-Association-of-SHS/Shumei-Tech-Docs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Digital-Media-Association-of-SHS/Shumei-Tech-Docs/issues"
+  },
+  "keywords": [
+    "digital-media",
+    "video-production",
+    "post-production",
+    "efp",
+    "documentation",
+    "vitepress",
+    "education",
+    "chinese"
+  ],
   "devDependencies": {
     "@mermaid-js/mermaid-mindmap": "^9.3.0",
     "@nolebase/vitepress-plugin-inline-link-preview": "^2.13.2",
