@@ -1,9 +1,11 @@
+/* 定义根元素的变量，用于设置主页英雄名称的背景渐变 */
 :root {
   --vp-home-hero-name-background: -webkit-linear-gradient(
     120deg,
     #d795c0 45%,
     #7189d2
   );
+  /* 定义根元素的变量，用于设置主页英雄图像的背景渐变 */
   --vp-home-hero-image-background-image: -webkit-linear-gradient(
     -45deg,
     #d795c0 50%,
@@ -18,6 +20,7 @@ section.footnotes {
   padding: 0 1em;
 }
 
+/* 设置标题、导航栏链接、菜单、侧边栏项目、本地导航下拉菜单、大纲标题、导航屏幕外观和链接的字体为 Inter、Noto Sans SC 和 sans-serif */
 .title,
 .VPNavBarMenuLink,
 .menu,

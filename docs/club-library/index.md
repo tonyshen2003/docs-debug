@@ -24,7 +24,7 @@ layout: doc
 建议按照时间顺序浏览社团发展历程，了解树莓社从创社到现在的完整故事。
 :::
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+<div class="card-grid">
 
 <Card 
   title="社团历史" 

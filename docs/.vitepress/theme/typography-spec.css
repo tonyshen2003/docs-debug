@@ -23,20 +23,19 @@
   --font-size-h5: 18px;         /* 五级标题 */
   --font-size-h6: 16px;         /* 六级标题 */
   
-  --font-size-body: 16px;        /* 正文 */
-  --font-size-caption: 14px;     /* 说明文字 */
+  --font-size-body: 14px;        /* 正文 */
   
   /* 兼容性别名 - 映射到统一的两种字体大小 */
-  --font-size-table: var(--font-size-caption);  /* 表格字体 */
-  --font-size-code: var(--font-size-caption);   /* 代码字体 */
-  
+  --font-size-table: var(--font-size-body);  /* 表格字体 */
+  --font-size-code: var(--font-size-body);   /* 代码字体 */
+  --font-size-caption: var(--font-size-body); /* 说明文字 */
   /* 移动端字体大小规范已移除 - 使用统一规范 */
   
   /* 行高规范 */
   --line-height-tight: 1.25;     /* 紧密 - 大标题 */
   --line-height-normal: 1.4;     /* 正常 - 小标题 */
   --line-height-relaxed: 1.5;    /* 宽松 - 正文 */
-  --line-height-loose: 1.8;      /* 松散 - 长文本 */
+  --line-height-loose: 1.5;      /* 松散 - 长文本 */
   
   /* 字间距规范 */
   --letter-spacing-tight: -0.02em;  /* 大标题 */
@@ -117,20 +116,20 @@
 
 /* 导航栏 */
 .VPNavBarTitle .title {
-  font-size: var(--font-size-body);
-  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-bold);
   font-family: var(--vp-font-family-base);
 }
 
 .VPNavBarMenuLink {
-  font-size: var(--font-size-caption);
+  font-size: var(--font-size-body);
   font-weight: var(--font-weight-regular);
   font-family: var(--vp-font-family-base);
 }
 
 /* 侧边栏 */
 .VPSidebarItem .text {
-  font-size: var(--font-size-caption);
+  font-size: var(--font-size-body);
   font-weight: var(--font-weight-regular);
 }
 

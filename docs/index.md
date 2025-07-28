@@ -1,7 +1,7 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
-title: Home
+title: 主页
 
 hero:
   name: "树莓技术库"
@@ -13,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /guide/EFP/camera-layout
+      link: /guide/
     - theme: alt
       text: 获得商业支持
       link: mailto:contact@szzxshumei.com

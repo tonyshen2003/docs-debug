@@ -4,7 +4,7 @@
 本教程基于 **DaVinci Resolve 20** 编写，涵盖最新的 AI 功能和工作流程。
 :::
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 20px 0;">
+<div class="card-grid">
 
 <Card 
   icon="/icons/yingshijufeng-logo.webp"
@@ -506,7 +506,7 @@ flowchart TD
 - **影视后期论坛**：技术讨论和案例分享
 - **B 站教程**：丰富的中文视频教程
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 20px 0;">
+<div class="card-grid">
 
 <Card 
   icon="🎬" 

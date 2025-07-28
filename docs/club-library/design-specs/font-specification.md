@@ -203,13 +203,13 @@
 
 ```css
 .VPNavBarTitle .title {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: var(--font-weight-medium);
   font-family: var(--vp-font-family-base);
 }
 
 .VPNavBarMenuLink {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: var(--font-weight-regular);
   font-family: var(--vp-font-family-base);
 }
@@ -221,7 +221,7 @@
 
 ```css
 .VPSidebarItem .text {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: var(--font-weight-regular);
 }
 
