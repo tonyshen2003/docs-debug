@@ -1,0 +1,106 @@
+/* ===== 字体性能优化配置 ===== */
+/* 为项目提供更好的字体加载性能和用户体验 */
+
+/* 字体预加载优化 */
+:root {
+  /* 字体加载优化 */
+  --font-loading-strategy: 'swap';
+  --font-fallback-delay: 100ms;
+}
+
+/* 字体回退策略 */
+.font-loading {
+  /* 字体加载期间的回退样式 */
+  font-family: system-ui, -apple-system, sans-serif;
+  font-optical-sizing: auto;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 代码字体优化 */
+.code-font-loading {
+  /* 等宽字体加载期间的回退 */
+  font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  font-variant-ligatures: common-ligatures;
+  font-feature-settings: 'liga' 1, 'calt' 1;
+}
+
+/* 字体显示优化 */
+@supports (font-display: swap) {
+  /* 现代浏览器字体交换策略 */
+  * {
+    font-display: swap;
+  }
+}
+
+/* 减少字体闪烁 */
+.font-smooth {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* 字体加载状态管理 */
+.fonts-loading {
+  /* 字体加载中的样式 */
+  visibility: hidden;
+}
+
+.fonts-loaded {
+  /* 字体加载完成的样式 */
+  visibility: visible;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* 关键字体预连接 */
+/* 在 HTML head 中添加以下预连接指令：
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+*/
+
+/* 字体子集优化建议 */
+/*
+建议的字体子集策略：
+1. 中文字体：仅包含常用汉字（GB2312）
+2. 英文字体：包含基本拉丁字符集
+3. 代码字体：包含编程符号和连字
+4. 图标字体：按需加载，避免全量加载
+*/
+
+/* 响应式字体加载 */
+@media (max-width: 768px) {
+  /* 移动端字体优化 */
+  .mobile-font-optimize {
+    font-size: 16px; /* 防止 iOS 缩放 */
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+}
+
+/* 打印样式字体优化 */
+@media print {
+  * {
+    /* 打印时使用系统字体，提高兼容性 */
+    font-family: serif !important;
+    color: black !important;
+    background: white !important;
+  }
+  
+  code, pre {
+    font-family: monospace !important;
+  }
+}
+
+/* 字体性能监控 */
+/*
+性能优化检查清单：
+✓ 使用 font-display: swap
+✓ 预加载关键字体文件
+✓ 压缩字体文件（WOFF2）
+✓ 移除不必要的字重
+✓ 使用字体子集
+✓ 设置合理的字体回退
+✓ 避免字体闪烁（FOIT/FOUT）
+*/

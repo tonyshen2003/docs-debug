@@ -375,11 +375,13 @@
 
   /* 代码块移动端适配 - 飞书风格 */
   .vp-doc div[class*="language-"] {
-    margin: 20px -16px;
+    margin: 20px 0;
     border-radius: 12px;
     border: 1px solid var(--vp-c-border);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     overflow: hidden;
+    width: 100%;
+    max-width: 100%;
   }
 
   .vp-doc div[class*="language-"] pre {

@@ -205,6 +205,22 @@
     padding: var(--spacing-md);
   }
   
+  /* VitePress Code Group 移动端适配 */
+  .vp-code-group .tabs {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .vp-code-group {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
   /* 标题层级调整 - 移动端 */
   .vp-doc h1 {
     font-size: var(--font-size-h3); /* 移动端使用更小的标题 */
@@ -561,8 +577,10 @@
 /* 移动端代码块 */
 @media (max-width: 767px) {
   .vp-doc div[class*="language-"] {
-    margin: var(--spacing-md) calc(-1 * var(--margin-mobile));
+    margin: var(--spacing-md) 0;
     border-radius: var(--radius-md);
+    width: 100%;
+    max-width: 100%;
   }
   
   .vp-doc div[class*="language-"] pre {
@@ -689,9 +707,12 @@
 /* 移动端引用块 */
 @media (max-width: 767px) {
   .vp-doc blockquote {
-    margin: var(--spacing-md) calc(-1 * var(--spacing-xs));
+    margin: var(--spacing-md) 0;
     padding: var(--spacing-sm) var(--spacing-md);
     border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -710,6 +731,12 @@
     
     .VPContent {
       padding-bottom: max(var(--spacing-3xl), env(safe-area-inset-bottom));
+    }
+    
+    /* 安全区域适配 */
+    .vp-doc {
+      padding-left: env(safe-area-inset-left);
+      padding-right: env(safe-area-inset-right);
     }
   }
 }
